@@ -1,0 +1,27 @@
+.input-container {
+  width: 100%;
+  height: 54px;
+  position: relative;
+  border: 1px solid #a0afbf;
+  padding: 0 17px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  input {
+    padding: none !important;
+  }
+  .right-icon {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    img {
+      height: 20px;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+    .password {
+      height: 10px !important;
+    }
+  }
+}

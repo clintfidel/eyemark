@@ -1,0 +1,36 @@
+.parent-tags {
+	font-size: 16px;
+	line-height: 22px;
+	display: flex;
+	color: #252117;
+	flex-wrap: wrap;
+	flex: 1;
+  	display: flex;
+	outline: none;
+    height: 95px;
+    overflow-y: scroll;
+}
+
+.tags-container {
+	overflow-y: scroll;
+}
+
+.top-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skip {
+	border-radius: 30px;
+	border: 2px solid #f3f3f3;
+	padding: 5px 8px !important;
+	font-style: normal;
+	background-color: transparent !important;
+	font-weight: 600 !important;
+	font-size: 16px;
+	line-height: 22px;
+	width: 26%;
+	height: 15%;
+	letter-spacing: 0.02em;
+	color: #252117;
+}
