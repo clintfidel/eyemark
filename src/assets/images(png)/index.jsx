@@ -5,7 +5,8 @@ import Logo from "./logo.png";
 import GooglePlay from "./googleplay.png";
 import AppStore from "./appstore.png";
 import JbLogo from "./JB logo 1.png";
+import ConstructionMan from "./man-construction.png";
 
 //global export
 
-export { Background, Logo, GooglePlay, AppStore, Background2, JbLogo };
+export { Background, Logo, GooglePlay, AppStore, Background2, JbLogo, ConstructionMan };
