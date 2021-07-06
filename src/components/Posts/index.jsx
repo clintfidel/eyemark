@@ -44,37 +44,45 @@ export default function Posts() {
             <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" /> */}
           </div>
           <div className="nav4">
-            <div className="postTop">
-              <div className="postTopLeft">
-                <div className="section9">
-                  <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+            <div className="within">
+              <div className="postTop">
+                <div className="postTop2">
+                  <div className="postTopLeft">
+                    <div className="section9">
+                      <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+                    </div>
+                    <div className="name">
+                      <h2 className="berger"> Julius Berger Nigeria PLC</h2>
+                      <p className="hour">16 hours ago</p>
+                    </div>
+                  </div>
+                  <div className="circle2">
+                    <p className="c">contractor</p>
+                    <img src={ConstructionMan} alt="Profile-Picture" className="postProfileImage" />
+                  </div>
                 </div>
-                <div className="name">
-                  <h2 classNames="berger"> Julius Berger Nigeria PLC</h2>
-                  <p classNames="hour">16 hours ago</p>
+                <div className="section10">
+                  <h4 className="prog">Construction Progress Report</h4>
+                  <p className="tran">
+                    Transport and mobility are a key part of today’s society. Roads must be durable
+                    <br />
+                    and safe otherwise they present a danger to their users and the environment, as
+                    <br />
+                    well as increasing repair costs.
+                  </p>
                 </div>
-              </div>
-              <div className="circle2">
-                <p classNames="c">contractor</p>
-                <img src={ConstructionMan} alt="Profile-Picture" className="postProfileImage" />
               </div>
             </div>
-          </div>
-          <div className="section10">
-            <h4 classNames="prog">Construction Progress Report</h4>
-            <p classNames="trans">
-              Transport and mobility are a key part of today’s society. Roads must be durable
-              <br />
-              and safe otherwise they present a danger to their users and the environment, as
-              <br />
-              well as increasing repair costs.
-            </p>
           </div>
           <div className="section11">
             <p className="view">View project</p>
           </div>
-          <div className="section12">
-            <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+
+          <div className="postBottom">
+            <div className="excited">are excited</div>
+            <div className="suspect">suspect false information</div>
+            <div className="comment">6</div>
+            <div className="more">more</div>
           </div>
         </div>
       </div>

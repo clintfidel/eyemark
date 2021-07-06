@@ -5,6 +5,7 @@
 .postWrapper {
     background-color: #fff;
     border-radius: 8px;
+    width: 664px;  
 }
 
 .postContent {
@@ -80,13 +81,13 @@ position: relative;
     margin: 9px;
     border: 1px solid #DCDCDC;
     border-radius: 10px;
-    width: 530px;
-    height: 146px;
+    width: 550px;
+    height: 156px;
 }
 
 .circle2 {
     display: flex;
-    margin-left: 40%;
+    padding-top: 10px;
 }
 
 .c {
@@ -98,20 +99,21 @@ position: relative;
     padding-top: 5px;
 }
 
-.circle2 img {
-margin-bottom: 85%;
+.postTop {
+    display: flex;
+    flex-direction: column;   
 }
 
-// .section9 img {
-//     width: 30px;
-//     border-radius: 50px;
-// }
+.within {
+    padding: 5px;
+}
 
-.postTop {
+.postTop2 {
     display: flex;
     justify-content: space-between;
     align-content: center;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 .postTopLeft {
@@ -120,15 +122,25 @@ margin-bottom: 85%;
 
 .name {
     padding-top: 10px;
+    height: 100%;
 }
 
 .berger {
-    margin-left: 16px;
     font-size: 12px;
 }
 
 .hour {
     font-size: 11px;
+    color: #7A7A7A;
+}
+
+.c {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #C8C8C8;
+    padding-top: 8px;
 }
 
 .circle2 img {
@@ -137,7 +149,6 @@ margin-bottom: 85%;
 }
 
 .prog {
-    margin-left: 6%;
     color: #A0AFBF;
 }
 
@@ -153,67 +164,21 @@ margin-bottom: 85%;
 }
 
 
+//Bottom
 
-
-
-// .imageContainer {
-//     background: #FFFFFF;
-//     border-radius: 8px;
-//     border: 1px;
-// }
-
-
-
-// .postTopRight {
-//     display: flex;
-//     justify-content: center;
-//     align-content: center;
-//     padding-top: 15px;
-// }
-
-// .postTopRight img {
-//     height: 15px;
-// }
-
-// .postUsername {
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 17px;
-// }
-
-// .postActiveTime {
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 12px;
-//     line-height: 16px;
-//     color: #7A7A7A;
-// }
-
-.c {
+.postBottom {
+    display: flex;
+    justify-content: space-between;
     font-weight: 500;
     font-size: 10px;
     line-height: 14px;
-    text-transform: uppercase;
-    color: #C8C8C8;
-    padding-top: 5px;
+    padding-top: 20px;
 }
 
-
-// //Bottom
-
-// .postBottom {
-//     display: flex;
-//     justify-content: space-between;
-//     font-weight: 500;
-//     font-size: 10px;
-//     line-height: 14px;
-//     padding: 10px;
-// }
-
-// .feeling {
-//     font-size: 10px;
-//     color: #808080;
-// }
+.feeling {
+    font-size: 10px;
+    color: #808080;
+}
 
 
 
