@@ -17,3 +17,7 @@ export const createAccountRoutes = {
   screen6: "interests",
   screen7: "follow"
 };
+
+export const userProfilesRoutes = {
+  screen1: ""
+};

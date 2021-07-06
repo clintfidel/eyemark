@@ -4,6 +4,7 @@ import { Error, Loading } from "components";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Sample from "modules/Sample";
 import Login from "modules/Login";
+import User from "modules/UserProfile/pages/Screen1";
 // import Interests from "modules/Interests";
 import CreateAccount from "modules/CreateAccount";
 import { withTranslation } from "react-i18next";
@@ -36,6 +37,7 @@ class App extends Component {
         <Router history={history}>
           <Switch>
             <Route path="/login" component={Login} />
+            <Route path="/citizen/userprofile" component={User} />
             <Route path="/onboarding" component={CreateAccount} />
             {/* <Route path="/interest" component={Interests} /> */}
             <Route path="/sample" component={Sample} />
