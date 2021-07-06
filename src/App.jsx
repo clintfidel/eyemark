@@ -4,7 +4,7 @@ import { Error, Loading } from "components";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Sample from "modules/Sample";
 import Login from "modules/Login";
-// import Interests from "modules/Interests";
+import UserProfile from "modules/UserProfile";
 import CreateAccount from "modules/CreateAccount";
 import { withTranslation } from "react-i18next";
 import "i18n";
@@ -37,7 +37,7 @@ class App extends Component {
           <Switch>
             <Route path="/login" component={Login} />
             <Route path="/onboarding" component={CreateAccount} />
-            {/* <Route path="/interest" component={Interests} /> */}
+            <Route path="/citizen/user-profile" component={UserProfile} />
             <Route path="/sample" component={Sample} />
             <Redirect to="/login" />
             {/* <PrivateRoute path="/" component={Main} /> */}
