@@ -1,16 +1,18 @@
 .feedNav {
-    background-color: #fff;
-    height: 96px;
+    background-color:#EDF2F7;  
 }
 
 .feednavWrapper {
     padding: 20px;
+    height: 63px;
+    background-color: #fff;
 }
 
 .feednavWrapper ul{
     display: flex;
     justify-content: space-between; 
     align-content: center;
+    margin-top: 10px;
 }
 
 .active {
@@ -32,4 +34,12 @@
 .nav-Link {
     color: #A0AFBF;
     font-size: 14px;
+}
+
+.relative {
+    padding: 80px;
+}
+
+.feed-space {
+    justify-content: center;
 }
