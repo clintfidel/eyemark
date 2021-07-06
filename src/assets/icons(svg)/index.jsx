@@ -12,17 +12,20 @@ import Person from "./person.svg";
 import Ministry from "./ministry.svg";
 import Verified from "./verified.svg";
 import SDG from "./sdg.svg";
-import Collapse from "./collapse.svg";
-import LogoUp from "./logoUp.svg";
-import PpSmall from "./ppSmall.svg";
-import More from "./more.svg";
-import Home from "./homeIcon.svg";
-import Project from "./projectsIcon.svg";
-import Category from "./categoriesIcon.svg";
-import Notification from "./notificationsIcon.svg";
-import AddIcon from "./addIcon.svg";
-import Profile from "./profileIcon.svg";
-import Settings from "./settingsIcon.svg";
+import SidebarLogo from "./sidebarLogo.svg";
+import CollapseIcon from "./collapseIcon.svg";
+import MoreIcon from "./more-icon.svg";
+import LadyImg from "./lady.svg";
+import HomeIcon from "./homeIcon.svg";
+import FolderIcon from "./folderIcon.svg";
+import SettingsIcon from "./settingsIcon.svg";
+import CategoryIcon from "./categoryIcon.svg";
+import BadgeIcon from "./badgeIcon.svg";
+import EyemarkedIcon from "./eyemarkedIcon.svg";
+import ProfileIcon from "./profileIcon.svg";
+import NotificationIcon from "./notificationIcon.svg";
+import SearchIcon from "./searchIcon.svg";
+
 //global export
 
 export {
@@ -39,15 +42,17 @@ export {
   Ministry,
   SDG,
   Verified,
-  Collapse,
-  LogoUp,
-  PpSmall,
-  More,
-  Home,
-  Project,
-  Category,
-  Notification,
-  AddIcon,
-  Profile,
-  Settings
+  SidebarLogo,
+  CollapseIcon,
+  MoreIcon,
+  LadyImg,
+  HomeIcon,
+  FolderIcon,
+  SettingsIcon,
+  CategoryIcon,
+  BadgeIcon,
+  EyemarkedIcon,
+  ProfileIcon,
+  NotificationIcon,
+  SearchIcon
 };

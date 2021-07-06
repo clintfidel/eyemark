@@ -8,6 +8,10 @@ export const loginRoutes = {
   screen1: ""
 };
 
+export const userProfileRoutes = {
+  screen1: ""
+};
+
 export const createAccountRoutes = {
   screen1: "create-account",
   screen2: "verify-code",

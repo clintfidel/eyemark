@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import { JbLogo } from "assets/images(png)";
 import {
   Collapse,
   LogoUp,
@@ -17,7 +18,22 @@ import {
 export default function Posts() {
   return (
     <div className="Posts">
-      <div className="sharedWrapper">Yo! its Shared</div>
+      <div className="postWrapper">
+        <div className="postTop">
+          <div className="postTopLeft">
+            <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+            <div className="name-Active">
+              <span className="postUsername">Julius Berger Nigeria Plc</span>
+              <span className="postActiveTime">16 hours ago</span>
+            </div>
+          </div>
+          <div className="postTopRight">
+            <span className="contractor">CONTRACTOR</span>
+          </div>
+        </div>
+        <div className="postCenter"></div>
+        <div className="postBottom"></div>
+      </div>
     </div>
   );
 }
