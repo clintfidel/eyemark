@@ -24,7 +24,19 @@ import BadgeIcon from "./badgeIcon.svg";
 import EyemarkedIcon from "./eyemarkedIcon.svg";
 import ProfileIcon from "./profileIcon.svg";
 import NotificationIcon from "./notificationIcon.svg";
+import ProjectsIcon from "./projects.svg";
 import SearchIcon from "./searchIcon.svg";
+import SmallImg1 from "./smallImage1.svg";
+import SmallImg2 from "./smallImage2.svg";
+import SmallImg4 from "./smallImage4.svg";
+import SmallImg5 from "./smallImage5.svg";
+import SmallImg6 from "./smallImage6.svg";
+import SmallImg7 from "./smallImage7.svg";
+import SmallImg8 from "./smallImage8.svg";
+import SmallImg9 from "./smallImage9.svg";
+import SmallImg10 from "./smallImage10.svg";
+import SmallImg11 from "./smallImage11.svg";
+import BigImage from "./bigImage.svg";
 
 //global export
 
@@ -54,5 +66,17 @@ export {
   EyemarkedIcon,
   ProfileIcon,
   NotificationIcon,
-  SearchIcon
+  SearchIcon,
+  ProjectsIcon,
+  SmallImg1,
+  SmallImg2,
+  SmallImg4,
+  SmallImg5,
+  SmallImg6,
+  SmallImg7,
+  SmallImg8,
+  SmallImg9,
+  SmallImg10,
+  SmallImg11,
+  BigImage
 };
