@@ -15,7 +15,18 @@ import {
   Settings,
   UpVote,
   DownVote,
-  MoreIcon2
+  MoreIcon2,
+  SmallImg1,
+  SmallImg2,
+  SmallImg4,
+  SmallImg5,
+  SmallImg6,
+  SmallImg7,
+  SmallImg8,
+  SmallImg9,
+  SmallImg10,
+  SmallImg11,
+  BigImage
 } from "assets/icons(svg)";
 
 export default function Posts() {
@@ -33,6 +44,7 @@ export default function Posts() {
             </div>
           </div>
           <div className="section6">
+            <div className="hr"></div>
             <h6 className="strong">strongly satisfactory</h6>
             <p className="sgs">
               SGS INTRON assists our clients with any questions on the performance and <br />
@@ -41,7 +53,7 @@ export default function Posts() {
             </p>
           </div>
           <div className="section7">
-            <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+            <img src={SmallImg1} alt="Profile-Picture" className="postProfileImage" />
             <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
             <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
             <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
@@ -115,6 +127,7 @@ export default function Posts() {
               <div className="postTopLeft">
                 <div className="section5">
                   <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+                  <hr />
                   <div className="name-Active">
                     <h6 className="adedolapo">Julius Berger Nigeria Plc</h6>
                     <p className="h">12 hours ago</p>
@@ -128,6 +141,7 @@ export default function Posts() {
             </div>
           </div>
           <div className="section6">
+            <div className="hr two"></div>
             <h6 className="strong">strongly satisfactory</h6>
             <p className="sgs">
               SGS INTRON assists our clients with any questions on the performance and <br />
@@ -142,7 +156,6 @@ export default function Posts() {
                   <div className="postTopLeft For9">
                     <div className="section9">
                       <img src={ProjectAvatar} alt="Profile-Picture" className="postProfileImage" />
-                      <hr />
                     </div>
                     <div className="name">
                       <h2 className="berger">Lagos-Ibadan Expressway Construction</h2>

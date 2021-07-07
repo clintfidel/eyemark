@@ -36,15 +36,24 @@
     position: relative;
 }
 
+.section6 {
+    position: relative;
+}
+
+.hr,
 .postProfileImage::after {
     content: " ";
     position: absolute;
     bottom: -.7rem;
     width: 1px;
-    height: 234px;
-    left: 34px;
-    top: 64px;
+    height: 200px;
+    left: 20px;
+    top: 1px;
     background: #DCDCDC;
+}
+
+.hr.two {
+    height: 80px;
 }
 
 .name-Active {
