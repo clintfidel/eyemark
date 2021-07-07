@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { JbLogo, ConstructionMan, Darly } from "assets/images(png)";
+import { JbLogo, ConstructionMan, Darly, ProjectAvatar, EyeMark } from "assets/images(png)";
 import {
   Collapse,
   LogoUp,
@@ -45,6 +45,7 @@ export default function Posts() {
             <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
             <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
             <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+            {/* <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" /> */}
           </div>
           <div className="nav4">
             <div className="within">
@@ -120,36 +121,37 @@ export default function Posts() {
                 <div className="postTop2 For9">
                   <div className="postTopLeft For9">
                     <div className="section9">
-                      <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+                      <img src={ProjectAvatar} alt="Profile-Picture" className="postProfileImage" />
                     </div>
                     <div className="name">
                       <h2 className="berger">Lagos-Ibadan Expressway Construction</h2>
                       <p className="hour">
-                        started 3 years ago <span>LAGOS - IBADAN.</span> <span>status</span> <span>ONGOING</span>
+                        started 3 years ago <span className="lag">LAGOS - IBADAN.</span>
+                        <span className="stat">status</span> <span className="on">ONGOING</span>
                       </p>
                     </div>
                   </div>
                   <div className="circle2">
                     <p className="c">project</p>
-                    <img src={ConstructionMan} alt="Profile-Picture" className="postProfileImage" />
+                    <img src={EyeMark} alt="Profile-Picture" className="postProfileImage" />
                   </div>
                 </div>
                 <div className="section10">
                   <h4 className="prog">Update title on project</h4>
                   <p className="tran s">
                     <div className="set budget">
-                      <span>BUDGET</span>
+                      <span className="setSpan">BUDGET</span>
                       <h3>150BN</h3>
                     </div>
 
                     <div className="set state">
-                      <span>STATE</span>
+                      <span className="setSpan">STATE</span>
                       <h3>MULTIPLE</h3>
                     </div>
 
                     <div className="set sentiment">
-                      <span>AVG. SENTIMENT</span>
-                      <h3>EXCITED 😆</h3>
+                      <span className="setSpan">AVG. SENTIMENT</span>
+                      <h3>😆 EXCITED</h3>
                     </div>
                     <button className="button">Unmarked</button>
                   </p>

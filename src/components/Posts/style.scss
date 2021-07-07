@@ -209,6 +209,53 @@ margin-left: 11%;
     color: #808080;
 }
 
+.lag {
+    color: #adadad;
+    font-size: 7.2px;
+    font-weight: 500;
+    padding-left: 3px;
+}
 
+.stat {
+    font-weight: 500;
+    font-size: 4px;
+    color: #252117;
+    background: #F2F0E0;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5), 5px 5px 25px rgba(255, 255, 255, 0.5);
+}
 
+.on {
+    font-weight: 500;
+    font-size: 7.2px;
+    line-height: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #02903c;
+}
+
+.setSpan {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #A0AFBF;
+}
+
+.button {
+    width: 101px;
+    height: 33px;
+    background: #E2E8F0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #757575;
+    margin-top: 13px;
+}
+
+.set h3 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
 
