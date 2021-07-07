@@ -6,11 +6,12 @@
     background-color: #fff;
     border-radius: 8px;
     width: 664px;  
+    margin-bottom: 40px;
 }
 
 .postContent {
-    padding: 50px;
-    height: 613px;
+    padding: 5px 20px;
+    height: 100%;
     top: 146px;
 }
 
@@ -27,6 +28,23 @@
     display: flex;
     align-content: center;
     margin-top: 10px;
+}
+
+.postProfileImage {
+    border-radius: 50% !important;
+    margin-right: 10px;
+    position: relative;
+}
+
+.postProfileImage::after {
+    content: " ";
+    position: absolute;
+    bottom: -.7rem;
+    width: 1px;
+    height: 234px;
+    left: 34px;
+    top: 64px;
+    background: #DCDCDC;
 }
 
 .name-Active {
@@ -62,18 +80,22 @@ margin-left: 11%;
 }
 
 .sgs {
-color: #252117;
-font-size: 12.8px;
-margin-left: 11%;
-font-family: Filson Pro;
+    color: #252117;
+    font-size: 12.8px;
+    margin-left: 11%;
+    font-family: Filson Pro;
+}
+
+.section7 {
+    display: flex;
 }
 
 .section7 img {
-margin-top: 2%;
-width: 114px;
-height: 113px;
-left: 64px;
-position: relative;
+    margin-top: 2%;
+    width: 114px;
+    height: 113px;
+    left: 64px;
+    position: relative;
 }
 
 .nav4 {
@@ -81,7 +103,7 @@ position: relative;
     margin: 9px;
     border: 1px solid #DCDCDC;
     border-radius: 10px;
-    width: 550px;
+    width: 540px;
     height: 156px;
 }
 
@@ -106,6 +128,7 @@ position: relative;
 
 .within {
     padding: 5px;
+    width: 100%;
 }
 
 .postTop2 {
@@ -113,6 +136,12 @@ position: relative;
     justify-content: space-between;
     align-content: center;
     width: 100%;
+    padding-bottom: 10px;
+}
+
+.postTop2.For9 {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 10px;
 }
 
@@ -152,9 +181,9 @@ position: relative;
     color: #A0AFBF;
 }
 
-.trans {
-    color: #252117;
-    font-size: 13px;
+.tran.s {
+    display: flex;
+    justify-content: space-between;
 }
 
 .view {

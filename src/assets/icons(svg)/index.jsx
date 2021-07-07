@@ -25,6 +25,8 @@ import EyemarkedIcon from "./eyemarkedIcon.svg";
 import ProfileIcon from "./profileIcon.svg";
 import NotificationIcon from "./notificationIcon.svg";
 import SearchIcon from "./searchIcon.svg";
+import UpVote from "./upvote.svg";
+import DownVote from "./downvote.svg";
 
 //global export
 
@@ -54,5 +56,7 @@ export {
   EyemarkedIcon,
   ProfileIcon,
   NotificationIcon,
-  SearchIcon
+  SearchIcon,
+  UpVote,
+  DownVote
 };
