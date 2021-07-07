@@ -142,6 +142,7 @@ export default function Posts() {
                   <div className="postTopLeft For9">
                     <div className="section9">
                       <img src={ProjectAvatar} alt="Profile-Picture" className="postProfileImage" />
+                      <hr />
                     </div>
                     <div className="name">
                       <h2 className="berger">Lagos-Ibadan Expressway Construction</h2>
