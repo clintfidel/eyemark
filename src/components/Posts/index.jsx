@@ -152,7 +152,7 @@ export default function Posts() {
                     </div>
                   </div>
                   <div className="circle2">
-                    <p className="c">project</p>
+                    <p className="c two">project</p>
                     <img src={EyeMark} alt="Profile-Picture" className="postProfileImage" />
                   </div>
                 </div>
