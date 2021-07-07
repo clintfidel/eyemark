@@ -82,9 +82,29 @@ export default function Posts() {
             <p className="view">View project</p>
           </div>
           <div className="postBottom">
-            <div className="excited">like 24</div>
-            <div className="suspect">down 4</div>
-            <div className="more">more</div>
+            <div className="excited">
+              <img src={UpVote} alt="like" />
+              <div className="expImageContainer">
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+              </div>
+              <div className="rateUnit">24</div>
+            </div>
+            <div className="suspect">
+              <img src={DownVote} alt="dislike" />
+              <div className="expImageContainer">
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+              </div>
+              <div className="rateUnit">4</div>
+            </div>
+            <div className="more">
+              <img src={MoreIcon2} alt="morelike" />
+            </div>
           </div>
         </div>
       </div>
@@ -166,11 +186,23 @@ export default function Posts() {
           <div className="postBottom">
             <div className="excited">
               <img src={UpVote} alt="like" />
-              <img src={Darly} alt="Profile-Picture" className="expImage" />
-              24
+              <div className="expImageContainer">
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+              </div>
+              <div className="rateUnit">24</div>
             </div>
             <div className="suspect">
-              <img src={DownVote} alt="dislike" />4
+              <img src={DownVote} alt="dislike" />
+              <div className="expImageContainer">
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Darly} alt="Profile-Picture" className="expImage" />
+              </div>
+              <div className="rateUnit">4</div>
             </div>
             <div className="more">
               <img src={MoreIcon2} alt="morelike" />

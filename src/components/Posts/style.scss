@@ -201,7 +201,8 @@ margin-left: 11%;
     font-weight: 500;
     font-size: 10px;
     line-height: 14px;
-    padding-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 10px;
 }
 
 .feeling {
@@ -265,4 +266,29 @@ margin-left: 11%;
     display: flex !important;
     justify-content: space-between;
     align-content: center !important;
+    text-align: center;
+}
+
+
+
+.expImage {
+    object-fit: contain;
+    width: 19px;
+    height: 17px;
+    margin-left: -10px;
+    top: -4px;
+    border-radius: 50%;  
+}
+
+.expImageContainer {
+    display: flex;
+    margin-left: 10px;
+    padding-left: 5px !important;
+}
+
+.rateUnit {
+    font-size: 12px;
+    line-height: 14px;
+    color: #989898;
+    padding-top: 5px;
 }
