@@ -26,6 +26,9 @@ import ProfileIcon from "./profileIcon.svg";
 import NotificationIcon from "./notificationIcon.svg";
 import ProjectsIcon from "./projects.svg";
 import SearchIcon from "./searchIcon.svg";
+import UpVote from "./upvote.svg";
+import DownVote from "./downvote.svg";
+import MoreIcon2 from "./more.svg";
 import SmallImg1 from "./smallImage1.svg";
 import SmallImg2 from "./smallImage2.svg";
 import SmallImg4 from "./smallImage4.svg";
@@ -78,5 +81,8 @@ export {
   SmallImg9,
   SmallImg10,
   SmallImg11,
-  BigImage
+  BigImage,
+  UpVote,
+  DownVote,
+  MoreIcon2
 };
