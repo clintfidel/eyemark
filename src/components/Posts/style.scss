@@ -259,3 +259,10 @@ margin-left: 11%;
     color: #000000;
 }
 
+.suspect,
+.excited,
+.more {
+    display: flex !important;
+    justify-content: space-between;
+    align-content: center !important;
+}

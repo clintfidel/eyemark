@@ -15,7 +15,7 @@ import {
   Settings,
   UpVote,
   DownVote,
-  MoreIcon
+  MoreIcon2
 } from "assets/icons(svg)";
 
 export default function Posts() {
@@ -164,9 +164,17 @@ export default function Posts() {
           </div>
 
           <div className="postBottom">
-            <div className="excited">like 24</div>
-            <div className="suspect">down 4</div>
-            <div className="more">more</div>
+            <div className="excited">
+              <img src={UpVote} alt="like" />
+              <img src={Darly} alt="Profile-Picture" className="expImage" />
+              24
+            </div>
+            <div className="suspect">
+              <img src={DownVote} alt="dislike" />4
+            </div>
+            <div className="more">
+              <img src={MoreIcon2} alt="morelike" />
+            </div>
           </div>
         </div>
       </div>

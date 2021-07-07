@@ -27,6 +27,7 @@ import NotificationIcon from "./notificationIcon.svg";
 import SearchIcon from "./searchIcon.svg";
 import UpVote from "./upvote.svg";
 import DownVote from "./downvote.svg";
+import MoreIcon2 from "./more.svg";
 
 //global export
 
@@ -58,5 +59,6 @@ export {
   NotificationIcon,
   SearchIcon,
   UpVote,
-  DownVote
+  DownVote,
+  MoreIcon2
 };
