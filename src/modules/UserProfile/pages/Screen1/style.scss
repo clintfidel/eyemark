@@ -24,7 +24,8 @@
 .mainContents {
   width: 60%;
   margin: 0px;
-  // padding-top: 20px;
+  border-left: 2px solid #DCDCDC;
+  border-right: 2px solid #DCDCDC;
   background: #F5F4F0;
   height: 100vh;
   overflow-y: scroll;
@@ -295,8 +296,8 @@
   }
 
   .follow-button {
-    width: 101px;
-    height: 33px;
+    width: 101px !important;
+    height: 33px !important;
     background: #fcf6e8;
     border: 1px solid #e4aa24;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5), 5px 5px 25px rgba(255, 255, 255, 0.5);
@@ -310,8 +311,8 @@
   }
   
   .follow-button-click {
-    width: 101px;
-    height: 33px;
+    width: 101px !important;
+    height: 33px !important;
     background: #E2E8F0;;
     border: none;
     box-shadow: none;

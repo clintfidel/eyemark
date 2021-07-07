@@ -92,6 +92,7 @@ const FeedNav = ({ color }) => {
             </a>
           </li>
         </ul>
+        <hr className="divider" />
       </div>
       <div className="relative">
         <div className="flex-auto">

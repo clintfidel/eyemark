@@ -1,11 +1,14 @@
-.feedNav {
-    background-color:#EDF2F7;  
-}
 
 .feednavWrapper {
-    padding: 20px;
-    height: 63px;
+    padding: 40px 30px;
+    height: 96px;
     background-color: #fff;
+}
+
+.divider {
+    border-bottom: 0.5px solid #A0AFBF;
+    padding: 0px 2%;
+    margin-top: 22px;
 }
 
 .feednavWrapper ul{
@@ -18,22 +21,28 @@
 .active {
     position: relative;
     color: #252117 !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .active::after {
     content: '';
     position: absolute;
-    bottom: -.7rem;
+    bottom: -1.6rem;
     left: 0;
-    width: 100%;
-    height: 3px;
+    width: 135%;
+    height: 6px;
     background-color: #E4AA24;
     border-radius: 10px 10px 0px 0px;
 }
 
 .nav-Link {
-    color: #A0AFBF;
+    font-weight: bold;
     font-size: 14px;
+    line-height: 17px;
+    color: #A0AFBF;
 }
 
 .relative {
