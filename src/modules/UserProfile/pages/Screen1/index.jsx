@@ -124,7 +124,7 @@ export function Screen1() {
         </div>
         <div className="sidebar2">
           <div className="input-icons">
-            {/* <img src={SearchIcon} className="input-img" /> */}
+            <img src={SearchIcon} className="input-img" />
             <input className="input-field" type="text" placeholder="search your profile" />
           </div>
           <div className="img">

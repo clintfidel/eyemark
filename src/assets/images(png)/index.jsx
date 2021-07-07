@@ -5,7 +5,11 @@ import Logo from "./logo.png";
 import GooglePlay from "./googleplay.png";
 import AppStore from "./appstore.png";
 import JbLogo from "./JB logo 1.png";
+import ConstructionMan from "./man-construction.png";
+import Darly from "./darly's-oyembo-4813620 1.png";
+import ProjectAvatar from "./Projects Avatar.png";
+import EyeMark from "./Eye Mark.png";
 
 //global export
 
-export { Background, Logo, GooglePlay, AppStore, Background2, JbLogo };
+export { Background, Logo, GooglePlay, AppStore, Background2, JbLogo, ConstructionMan, Darly, ProjectAvatar, EyeMark };
