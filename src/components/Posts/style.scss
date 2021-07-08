@@ -1,12 +1,15 @@
 .posts {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .postWrapper {
     background-color: #fff;
     border-radius: 8px;
-    width: 664px;  
     margin-bottom: 40px;
+    align-content: center;
 }
 
 .postContent {
