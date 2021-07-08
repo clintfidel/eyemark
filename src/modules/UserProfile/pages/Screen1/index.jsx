@@ -171,7 +171,7 @@ export function Screen1() {
               </div>
               <button
                 onClick={toggleBtn2}
-                className={`follow-button border-dashed ${clickBtn2 ? "follow-button-click" : "follow-button"}`}
+                className={`follow-button-u border-dashed ${clickBtn2 ? "follow-button-click-u" : "follow-button-u"}`}
               >
                 {clickBtn2 ? "Unfollow" : "Follow"}
               </button>

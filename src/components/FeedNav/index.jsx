@@ -94,7 +94,7 @@ const FeedNav = ({ color }) => {
         </ul>
         <hr className="divider" />
       </div>
-      <div className="relative">
+      <div className="relative-feed">
         <div className="flex-auto">
           <div className="feed-space">
             <div className={openTab === 1 ? "block" : "hidden"} id="link1">

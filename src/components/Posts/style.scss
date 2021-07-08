@@ -88,22 +88,30 @@
 }
 
 .strong {
-color: #A0AFBF;
-font-size: 14px;
-font-weight: bold;
-margin-top: 2%;
-margin-left: 11%;
+    color: #A0AFBF;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 2% 0;
+    margin-left: 11%;
 }
 
 .sgs {
     color: #252117;
-    font-size: 12.8px;
     margin-left: 11%;
-    font-family: Filson Pro;
+    font-family: "Filson Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 148.8%;
+    color: #252117;
+    width: 87%;
+    word-break: break-all;
 }
 
 .section7 {
+    width: 98%;
     display: flex;
+    overflow-x: scroll;
 }
 
 .section7 img {
@@ -116,11 +124,23 @@ margin-left: 11%;
 
 .nav4 {
     display: flex;
-    margin: 9px;
+    margin: 25px 9px 9px 9px;
     border: 1px solid #DCDCDC;
     border-radius: 10px;
-    width: 540px;
+    width: 98%;
     height: 156px;
+}
+
+.reply {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 148.8%;
+    color: #252117;
+    width: 98%;
+    word-break: break-all;
+    padding-left: 14px;
+    padding-top: 5px
 }
 
 .circle2 {
@@ -147,7 +167,7 @@ margin-left: 11%;
 }
 
 .within {
-    padding: 5px;
+    padding: 6px;
     width: 100%;
 }
 
@@ -199,17 +219,26 @@ margin-left: 11%;
 
 .prog {
     color: #A0AFBF;
+    padding-left: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 14px;
+    padding-left: 13px;
+    padding-top: 10px
 }
 
 .tran.s {
     display: flex;
     justify-content: space-between;
+    margin: 5px 2%;
 }
 
 .view {
     color: #E4AA24;
     font-weight: 500;
     font-size: 14px;
+    padding: 10px;
 }
 
 

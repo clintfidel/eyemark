@@ -12,33 +12,7 @@ import {
   Frame3,
   Frame4
 } from "assets/images(png)";
-import {
-  Collapse,
-  LogoUp,
-  PpSmall,
-  More,
-  Home,
-  Project,
-  AddIcon,
-  Category,
-  Notification,
-  Profile,
-  Settings,
-  UpVote,
-  DownVote,
-  MoreIcon2,
-  SmallImg1,
-  SmallImg2,
-  SmallImg4,
-  SmallImg5,
-  SmallImg6,
-  SmallImg7,
-  SmallImg8,
-  SmallImg9,
-  SmallImg10,
-  SmallImg11,
-  BigImage
-} from "assets/icons(svg)";
+import { UpVote, DownVote, MoreIcon2 } from "assets/icons(svg)";
 
 export default function Posts() {
   return (
@@ -56,11 +30,10 @@ export default function Posts() {
           </div>
           <div className="section6">
             <div className="hr"></div>
-            <h6 className="strong">strongly satisfactory</h6>
+            <h6 className="strong">Strongly satisfactory</h6>
             <p className="sgs">
-              SGS INTRON assists our clients with any questions on the performance and <br />
-              durability of road materials and products. To this end we offer a wide array of <br />
-              services including testing, research and assessment...
+              SGS INTRON assists our clients with any questions on the performance and durability of road materials and
+              products. To this end we offer a wide array of services including testing, research and assessment...
             </p>
           </div>
           <div className="section7">
@@ -68,6 +41,7 @@ export default function Posts() {
             <img src={Frame2} alt="post-image" className="postImage" />
             <img src={Frame3} alt="post-image" className="postImage" />
             <img src={Frame4} alt="post-image" className="postImage" />
+            <img src={Frame3} alt="post-image" className="postImage" />
             {/* <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" /> */}
           </div>
           <div className="nav4">
@@ -90,12 +64,9 @@ export default function Posts() {
                 </div>
                 <div className="section10">
                   <h4 className="prog">Construction Progress Report</h4>
-                  <p className="tran">
-                    Transport and mobility are a key part of today’s society. Roads must be durable
-                    <br />
-                    and safe otherwise they present a danger to their users and the environment, as
-                    <br />
-                    well as increasing repair costs.
+                  <p className="reply">
+                    Transport and mobility are a key part of today’s society. Roads must be durable and safe otherwise
+                    they present a danger to their users and the environment, as well as increasing repair costs.
                   </p>
                 </div>
               </div>
