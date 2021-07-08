@@ -1,6 +1,17 @@
 import React from "react";
 import "./style.scss";
-import { JbLogo, ConstructionMan, Darly, ProjectAvatar, EyeMark } from "assets/images(png)";
+import {
+  JbLogo,
+  ConstructionMan,
+  Darly,
+  ProjectAvatar,
+  EyeMark,
+  Fayose,
+  Frame1,
+  Frame2,
+  Frame3,
+  Frame4
+} from "assets/images(png)";
 import {
   Collapse,
   LogoUp,
@@ -53,10 +64,10 @@ export default function Posts() {
             </p>
           </div>
           <div className="section7">
-            <img src={SmallImg1} alt="Profile-Picture" className="postProfileImage" />
-            <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
-            <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
-            <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" />
+            <img src={Frame1} alt="post-image" className="postImage" />
+            <img src={Frame2} alt="post-image" className="postImage" />
+            <img src={Frame3} alt="post-image" className="postImage" />
+            <img src={Frame4} alt="post-image" className="postImage" />
             {/* <img src={JbLogo} alt="Profile-Picture" className="postProfileImage" /> */}
           </div>
           <div className="nav4">
@@ -98,9 +109,9 @@ export default function Posts() {
               <img src={UpVote} alt="like" />
               <div className="expImageContainer">
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
               </div>
               <div className="rateUnit">24</div>
             </div>
@@ -108,9 +119,9 @@ export default function Posts() {
               <img src={DownVote} alt="dislike" />
               <div className="expImageContainer">
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
               </div>
               <div className="rateUnit">4</div>
             </div>
@@ -201,9 +212,9 @@ export default function Posts() {
             <div className="excited">
               <img src={UpVote} alt="like" />
               <div className="expImageContainer">
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
               </div>
               <div className="rateUnit">24</div>
@@ -211,9 +222,9 @@ export default function Posts() {
             <div className="suspect">
               <img src={DownVote} alt="dislike" />
               <div className="expImageContainer">
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
-                <img src={Darly} alt="Profile-Picture" className="expImage" />
+                <img src={Fayose} alt="Profile-Picture" className="expImage" />
                 <img src={Darly} alt="Profile-Picture" className="expImage" />
               </div>
               <div className="rateUnit">4</div>
