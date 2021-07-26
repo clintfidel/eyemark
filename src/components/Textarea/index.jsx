@@ -14,7 +14,13 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Textarea({ placeholder, type = "text", getTextValue }) {
+export default function Textarea({
+  placeholder,
+  type = "text",
+  getTextValue = () => {},
+  requiredValue = 100,
+  className = ""
+}) {
   const classes = useStyles();
   const [text, setText] = useState("");
   const handleChange = event => {
@@ -23,7 +29,7 @@ export default function Textarea({ placeholder, type = "text", getTextValue }) {
     getTextValue(value);
   };
   return (
-    <div className="textarea-container mb-8">
+    <div className={`textarea-container mb-8 txt-sm ${className}`}>
       <TextField
         InputLabelProps={{
           style: { color: "#A0AFBF", fontSize: "14px", fontWeight: "bold" }
@@ -35,10 +41,12 @@ export default function Textarea({ placeholder, type = "text", getTextValue }) {
         multiline
         rows={11}
         onChange={handleChange}
-        inputProps={{ maxLength: 100 }}
+        inputProps={{ maxLength: requiredValue }}
       />
       <div className="right-icon">
-        <p>{text.length}/100</p>
+        <p>
+          {text.length}/{requiredValue}
+        </p>
       </div>
     </div>
   );

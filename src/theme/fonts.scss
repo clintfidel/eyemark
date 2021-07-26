@@ -1,7 +1,7 @@
-// @font-face {
-//   font-family: "EuclidCircularA-Regular";
-//   src: url(../assets/fonts/EuclidCircularA-Regular.ttf) format("truetype");
-// }
+@font-face {
+  font-family: "FilsonPro-Regular";
+  src: url(../assets/fonts/FilsonPro-Regular.ttf) format("truetype");
+}
 
 p,
 input,
@@ -9,9 +9,9 @@ textarea,
 select,
 button,
 a {
-  font-family: EuclidCircularA-Regular, sans-serif;
+  font-family: FilsonPro-Regular, sans-serif !important;
 }
 
-h1 {
-  font-family: EuclidCircularA-Bold, sans-serif;
+* {
+  font-family: FilsonPro-Regular, sans-serif !important;
 }

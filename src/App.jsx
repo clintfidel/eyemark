@@ -2,12 +2,12 @@ import React, { Component, Suspense } from "react";
 import history from "routes/history";
 import { Error, Loading } from "components";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
-import Sample from "modules/Sample";
 import Login from "modules/Login";
-import UserProfile from "modules/UserProfile";
+import Dashboard from "modules/Dashboard";
 import CreateAccount from "modules/CreateAccount";
 import { withTranslation } from "react-i18next";
 import "i18n";
+import PrivateRoute from "routes/privateroute";
 
 class App extends Component {
   state = {
@@ -36,12 +36,9 @@ class App extends Component {
         <Router history={history}>
           <Switch>
             <Route path="/login" component={Login} />
-            {/* <Route path="/citizen/userprofile" component={User} /> */}
             <Route path="/onboarding" component={CreateAccount} />
-            <Route path="/citizen/user-profile" component={UserProfile} />
-            <Route path="/sample" component={Sample} />
+            <PrivateRoute path="/dashboard" component={Dashboard} />
             <Redirect to="/login" />
-            {/* <PrivateRoute path="/" component={Main} /> */}
           </Switch>
         </Router>
       </Suspense>

@@ -57,11 +57,6 @@ module.exports = {
       move: "move",
       "not-allowed": "not-allowed"
     },
-    fontFamily: {
-      customRoboto: ["Roboto", "sans-serif"],
-      customBarlow: ["Barlow", "sans-serif"],
-      "Filson Pro": ["Filson Pro", "sans-serif"]
-    },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
       sm: ["0.875rem", { lineHeight: "1.25rem" }],

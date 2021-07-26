@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Background, Logo, GooglePlay, AppStore } from "assets/images(png)";
 import { Input, Button } from "components";
 import "./style.scss";
-import { Google, Facebook, Twitter } from "assets/icons(svg)";
+import { Google, Facebook, Twitter, LogoBlack } from "assets/icons(svg)";
 import { createAccountRoutes } from "routes/routes-list";
 import { useTranslation } from "react-i18next";
 
@@ -66,13 +66,41 @@ export function Screen1({ history }) {
         </div>
         <div className="flex w-full footer items-center justify-between mt-12">
           <p className="text-white">Eyemark © 2021. All rights reserved.</p>
-          <div className="flex items-center justify-between lang">
+          <div className="flex items-center justify-between">
             <p className="text-white font-bold mr-5">English</p>
             <p className="opacity-50 text-white mr-5">Igbo</p>
             <p className="opacity-50 text-white mr-5">Yoruba</p>
             <p className="opacity-50 text-white">Hausa</p>
           </div>
         </div>
+      </div>
+      <div className="mobile-login">
+        <img src={LogoBlack} alt="logo" className="logo" />
+        <p className="text-base font-semibold mb-2.5">{t("Login to Eyemark")}</p>
+        <p className="text-sm font-medium pr-2 mb-10" style={{ color: "#4B5667" }}>
+          Lorem ipsum dolor sit amet, nonummy nibh euismod tincidunt ut laoreet dolore magna{" "}
+        </p>
+        <div className="flex flex-row items-center mb-10">
+          <p className="mr-1 text-base font-medium" style={{ color: "#4B5667" }}>
+            Don’t have an account?
+          </p>
+          <p
+            className="text-base font-bold cursor-pointer"
+            onClick={() => history.push(`/onboarding/${createAccountRoutes.screen1}`)}
+          >
+            Create Account
+          </p>
+        </div>
+        <Input placeholder="Phone, email, username" />
+        <Input placeholder="Password" type="password" />
+        <Button text="Login" />
+        <div className="mb-10" />
+        <div className="w-full flex items-center justify-center mb-9">
+          <img src={Facebook} className="mr-5 cursor-pointer" alt="facebook" />
+          <img src={Google} className="mr-5 cursor-pointer" alt="google" />
+          <img src={Twitter} className="cursor-pointer" alt="twitter" />
+        </div>
+        <p className="text-sm text-center cursor-pointer">Forgot Password</p>
       </div>
     </>
   );

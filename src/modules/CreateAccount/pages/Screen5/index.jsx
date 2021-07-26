@@ -31,7 +31,7 @@ export function Screen5({ history }) {
             </div>
           </div>
           <p className="text-base font-semibold mb-2.5">Tell us a bit about yourself</p>
-          <p className="text-sm font-medium mb-14 w-96" style={{ color: "#4B5667" }}>
+          <p className="text-sm font-medium mb-14 w-96 subtitle" style={{ color: "#4B5667" }}>
             Lorem ipsum dolor sit amet, nonummy nibh euismod tincidunt ut laoreet dolore magna{" "}
           </p>
           <Textarea placeholder="Your bio" getTextValue={value => setBio(value)} />

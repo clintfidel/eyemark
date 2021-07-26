@@ -1,24 +1,10 @@
-
-@font-face {
-  font-family: 'Filson Pro' !important;
-  src: url('../../assets/fonts/FilsonPro-Thin/FilsonPro-Thin.ttf') format('truetype')
-  url('../../assets/fonts/FilsonPro-Thin/FilsonPro-Thin.woff') format('woff')
-  url('../../assets/fonts/FilsonPro-Thin/FilsonPro-Thin.woff2') format('woff') !important;
-  font-style: normal;
-}
-
-body, html {
-  font-family: 'Filson Pro' !important;
-}
-
-p, input, textarea, select, button, a {
-  font-family: 'Filson Pro' !important;
-}
-
 .onboarding-container {
   width: 100%;
   height: 100vh;
   background-color: #edf2f7;
+  @media only screen and (max-width: 750px) {
+    padding: 0 20px;
+  }
 }
 
 .card {
@@ -29,6 +15,11 @@ p, input, textarea, select, button, a {
   background-color: #fff;
   .footer {
     background-color: #252117;
+  }
+  .subtitle {
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
   }
 }
 

@@ -1,5 +1,6 @@
 //import all assets/icons
 import Logo from "./logo.svg";
+import LogoBlack from "./logo-black.svg";
 import Eye from "./eye.svg";
 import Google from "./g.svg";
 import Facebook from "./fb.svg";
@@ -40,6 +41,10 @@ import SmallImg9 from "./smallImage9.svg";
 import SmallImg10 from "./smallImage10.svg";
 import SmallImg11 from "./smallImage11.svg";
 import BigImage from "./bigImage.svg";
+import Comment from "./comment.svg";
+import Emoji from "./emoji.svg";
+import ArrowDown from "./arrow-down.svg";
+import AddImage from "./add-image.svg";
 
 //global export
 
@@ -84,5 +89,10 @@ export {
   BigImage,
   UpVote,
   DownVote,
-  MoreIcon2
+  MoreIcon2,
+  Comment,
+  Emoji,
+  ArrowDown,
+  AddImage,
+  LogoBlack
 };
