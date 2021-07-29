@@ -72,7 +72,7 @@ const Sidebar = ({}) => {
           <p>Settings</p>
         </NavLink>
       </div>
-      <div className="absolute bottom-8 lang left-0 right-0">
+      <div className="absolute bottom-8 lang left-0 right-0 lang">
         <hr className="horizontal-line2" />
         <div className="flex items-center">
           <p className="lang-active">English</p>
