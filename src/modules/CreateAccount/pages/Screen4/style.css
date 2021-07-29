@@ -1,0 +1,13 @@
+.upload-container {
+  width: 223px;
+  height: 223px;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.upload-container .add-image {
+  z-index: 5;
+}
+/*# sourceMappingURL=style.css.map */

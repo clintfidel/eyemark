@@ -1,0 +1,34 @@
+.input-container {
+  width: 100%;
+  height: 54px;
+  position: relative;
+  border: 1px solid #a0afbf;
+  padding: 0 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.input-container input {
+  padding: none !important;
+}
+
+.input-container .right-icon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+}
+
+.input-container .right-icon img {
+  height: 20px;
+}
+
+.input-container .right-icon:hover {
+  opacity: 0.5;
+}
+
+.input-container .right-icon .password {
+  height: 10px !important;
+}
+/*# sourceMappingURL=style.css.map */
