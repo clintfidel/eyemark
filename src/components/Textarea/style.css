@@ -1,0 +1,29 @@
+.textarea-container {
+  width: 100%;
+  height: 239px;
+  position: relative;
+  border: 1px solid #a0afbf;
+  padding: 0 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.textarea-container .right-icon {
+  position: absolute;
+  right: 17px;
+  bottom: 15px;
+}
+
+.textarea-container .right-icon p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.8px;
+  line-height: 148.8%;
+  color: #ccd5df;
+}
+
+.txt-sm {
+  height: 118px;
+}
+/*# sourceMappingURL=style.css.map */
