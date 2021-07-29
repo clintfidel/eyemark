@@ -155,7 +155,7 @@ export function Screen1({ history }) {
                         </p>
                       </div>
                     </div>
-                    <div className="circle2 proj">
+                    <div className="circle2">
                       <p className="c two">project</p>
                       <img src={EyeMark} alt="Profile-Picture" className="postProfileImage" />
                     </div>
