@@ -395,6 +395,53 @@
     width: 100vw !important;
     margin-top: 5px !important;
   }
+  .mainContents .content .profile-eyemarked {
+    width: 100%;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .mainContents .content .profile-eyemarked img.mr-5 {
+    margin-right: 0.1rem !important;
+  }
+  .mainContents .content .profile-eyemarked .eyemarked #input_container #input {
+    padding-left: 50px !important;
+    height: 50px !important;
+    margin-top: 10px !important;
+  }
+  .mainContents .content .profile-eyemarked .input_contain {
+    display: none !important;
+  }
+  .mainContents .content .profile-eyemarked .mt-5 .my-10 .w-full img.mr-5 {
+    margin-right: 0.1rem !important;
+    padding-right: 8px !important;
+  }
+  .mainContents .content .profile-eyemarked .mt-5 .my-10 .follow-button-f {
+    width: 90px !important;
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+  .mainContents .content .profile-eyemarked .mt-5 .my-10 .follow-button-e {
+    width: 90px !important;
+    height: 30px !important;
+    font-size: 12px !important;
+  }
+  .mainContents .content .profile-media {
+    width: 100vw !important;
+    padding: 0 10px !important;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .mainContents .content .profile-media .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: (12vw)[8] !important;
+        grid-template-rows: repeat(8, 12vw) !important;
+    grid-gap: 5px !important;
+    margin: auto;
+  }
   .mainContents .content .postWrapper {
     width: 100% !important;
   }
@@ -408,6 +455,7 @@
     overflow-x: scroll !important;
     position: relative !important;
     margin-bottom: 10px !important;
+    padding-bottom: 12px !important;
   }
   .mainContents .content .postWrapper .postContent .section7 img.postImage {
     height: 70px !important;
@@ -431,16 +479,13 @@
     display: inline !important;
   }
   .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 {
-    display: inline !important;
-    padding: 0px 0px 20px !important;
+    padding: 0px 0px 10px !important;
     margin-right: 0px !important;
   }
   .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 .circle2 {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    width: 20% !important;
-    margin-left: 40vw !important;
     padding: 5px !important;
     -ms-flex-line-pack: center !important;
         align-content: center !important;
@@ -494,7 +539,6 @@
     font-size: 9px !important;
     text-transform: uppercase !important;
     color: #a0afbf !important;
-    margin: 5px !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
