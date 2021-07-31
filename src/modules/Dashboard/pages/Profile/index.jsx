@@ -8,28 +8,36 @@ const Screen3 = React.lazy(() => import("./pages/Screen3"));
 const Screen4 = React.lazy(() => import("./pages/Screen4"));
 const Screen5 = React.lazy(() => import("./pages/Screen5"));
 import "./style.scss";
+import LeftMenu from "../../leftMenu";
+import RightMenu from "../../rightMenu";
 
-const Profile = () => {
+const Profile = ({ rightDrawer, leftDrawer }) => {
   let { path, url } = useRouteMatch();
   return (
     <Suspense fallback={<Loading />}>
       <div className="profile-container">
-        <div className="navigation">
-          <NavLink to={`${url}/${profileRoutes.screen1}`} className="nav" activeClassName="nav-active">
-            <p>Posts</p>
-          </NavLink>
-          <NavLink to={`${url}/${profileRoutes.screen2}`} className="nav" activeClassName="nav-active">
-            <p>Media</p>
-          </NavLink>
-          <NavLink to={`${url}/${profileRoutes.screen3}`} className="nav" activeClassName="nav-active">
-            <p>Eyemarked</p>
-          </NavLink>
-          <NavLink to={`${url}/${profileRoutes.screen4}`} className="nav" activeClassName="nav-active">
-            <p>Followers</p>
-          </NavLink>
-          <NavLink to={`${url}/${profileRoutes.screen5}`} className="nav" activeClassName="nav-active">
-            <p>Following</p>
-          </NavLink>
+        <div className="nav-cont-profile">
+          <div className="flex pt-5 pb-3 px-5 justify-between md:hidden lg:hidden mobile-view">
+            <LeftMenu click={leftDrawer} />
+            <RightMenu click={rightDrawer} />
+          </div>
+          <div className="navigation">
+            <NavLink to={`${url}/${profileRoutes.screen1}`} className="nav" activeClassName="nav-active">
+              <p>Posts</p>
+            </NavLink>
+            <NavLink to={`${url}/${profileRoutes.screen2}`} className="nav" activeClassName="nav-active">
+              <p>Media</p>
+            </NavLink>
+            <NavLink to={`${url}/${profileRoutes.screen3}`} className="nav" activeClassName="nav-active">
+              <p>Eyemarked</p>
+            </NavLink>
+            <NavLink to={`${url}/${profileRoutes.screen4}`} className="nav" activeClassName="nav-active">
+              <p>Followers</p>
+            </NavLink>
+            <NavLink to={`${url}/${profileRoutes.screen5}`} className="nav" activeClassName="nav-active">
+              <p>Following</p>
+            </NavLink>
+          </div>
         </div>
         <div className="content">
           <Switch>

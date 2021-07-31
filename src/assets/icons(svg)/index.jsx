@@ -45,10 +45,23 @@ import Comment from "./comment.svg";
 import Emoji from "./emoji.svg";
 import ArrowDown from "./arrow-down.svg";
 import AddImage from "./add-image.svg";
+import Sectors from "./sectors.svg";
+import SDGs from "./sdgs.svg";
+import Ministries from "./ministries.svg";
+import States from "./states.svg";
+import ArrowBack from "./arrow-back.svg";
+import Filter from "./filter.svg";
+import EyeMark from "./eyemark.svg";
 
 //global export
 
 export {
+  Filter,
+  ArrowBack,
+  Sectors,
+  SDGs,
+  Ministries,
+  States,
   Logo,
   Eye,
   Google,
@@ -94,5 +107,6 @@ export {
   Emoji,
   ArrowDown,
   AddImage,
-  LogoBlack
+  LogoBlack,
+  EyeMark
 };

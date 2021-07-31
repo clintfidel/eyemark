@@ -1,0 +1,56 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1535379453347-1ffd615e2e08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80",
+    "title": "Agriculture",
+    "description": "The country is a leader in various types of agricultural production, such as palm oil, cocoa beans, pineapple, and sorghum. It is the largest producer of sorghum in the world just after the United States, and ranks fifth in the production of palm oil and cocoa beans.",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "project": "1,300"
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1530545124313-ce5e8eae55af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80",
+    "title": "Aviation",
+    "description": "Civil aviation is a critical element in Nigeria's transportation system and indeed its economy. Nigeria has twenty (20) airports and many regulated airstrips and heliports; 23 active domestic airlines; 554 licensed pilots; 913 licensed engineers and 1700 cabin personnel.",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "project": "1,300"
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1508473066486-a07f0e2f8ff9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80",
+    "title": "Communication",
+    "description": "The Nigerian Communications Commission is the independent regulatory authority for the telecommunications industry in Nigeria. The NCC was created under Decree number 75 by the [Federal Military Government of Nigeria] on 24 November 1992.",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "project": "1,300"
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1615482319206-d2545553676e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
+    "title": "Defence",
+    "description": "The Ministry of Defence is a Ministry of the Federal Government of Nigeria with the statutory responsibility of overseeing and supervising the Nigerian Armed Forces.",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "project": "1,300"
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1704&q=80",
+    "title": "Education",
+    "description": "Nigeria's education system is based on the (1)-6-3-3-4 formula: one year pre-primary education, six years primary, three years junior secondary, three years senior secondary, and a minimum of four years tertiary education. ... Millions of Nigerians are half-educated, and over 60 million – or 30%...",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "project": "1,300"
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80",
+    "title": "Health",
+    "description": "Nigeria patients and healthcare services, Nigeria as one of the LMICs commonly experience or face dual health burden from Communicable disease such as Tuberculosis, Hepatitis B, Influenza, HIV/AIDS, these are highly infectious diseases, And Non-communicable disease diseases.",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "project": "1,300"
+    }
+  }
+]

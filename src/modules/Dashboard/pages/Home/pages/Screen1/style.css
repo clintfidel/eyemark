@@ -143,6 +143,12 @@
   margin-right: 20px;
 }
 
+@media only screen and (max-width: 750px) {
+  .home-posts .section7 .bigImg {
+    left: 30px;
+  }
+}
+
 .home-posts .nav4 {
   display: -webkit-box;
   display: -ms-flexbox;

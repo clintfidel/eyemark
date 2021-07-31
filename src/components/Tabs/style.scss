@@ -41,6 +41,11 @@
   text-align: center;
   color: #757575;
   outline: none !important;
+  @media only screen and (max-width: 750px) {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+  }
 }
 
 .first-text {

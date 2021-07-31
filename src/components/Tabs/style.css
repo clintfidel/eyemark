@@ -24,14 +24,6 @@
   outline: none !important;
 }
 
-@media only screen and (max-width: 750px) {
-  .follow-button {
-    width: 70px;
-    height: 25px;
-    font-size: 12px;
-  }
-}
-
 .follow-button-click {
   width: 135px;
   height: 33px;
@@ -101,3 +93,18 @@
   color: #adadad;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media only screen and (max-width: 750px) {
+  .follow-button {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .follow-button-click {
+    width: 70px;
+    height: 25px;
+    background: #e2e8f0;
+    font-size: 12px;
+  }
+}

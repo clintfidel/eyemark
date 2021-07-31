@@ -1,0 +1,16 @@
+.screen2-categories {
+  .cat {
+    width: 100%;
+    min-height: 232px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 17px 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .content {
+    padding: 0 30px;
+    margin-top: 35px;
+  }
+}

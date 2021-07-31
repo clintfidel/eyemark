@@ -1,6 +1,7 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Switch, Route, useRouteMatch, NavLink, Redirect } from "react-router-dom";
 import { Loading } from "components";
+import BackDrop from "./backdrop";
 import { dashboardRoutes } from "routes/routes-list";
 import {
   SidebarLogo,
@@ -18,12 +19,18 @@ import {
 } from "assets/icons(svg)";
 const Profile = React.lazy(() => import("./pages/Profile"));
 const Home = React.lazy(() => import("./pages/Home"));
+const Categories = React.lazy(() => import("./pages/Categories"));
 import "./style.scss";
 
-const Sidebar = ({}) => {
+const Sidebar = ({ show }) => {
+  let drawerClasses = ["sidebar"];
+
+  if (show) {
+    drawerClasses = ["sidebar", "open"];
+  }
   let { url } = useRouteMatch();
   return (
-    <div className="sidebar relative">
+    <div className={`sidebar relative ${drawerClasses.join(" ")}`}>
       <div className="logo flex items-center justify-between">
         <img src={SidebarLogo} />
         <img src={CollapseIcon} />
@@ -103,9 +110,14 @@ const FollowSuggestion = ({}) => {
   );
 };
 
-const SidebarProfile = ({}) => {
+const SidebarProfile = ({ showRight }) => {
+  let drawerClasses = ["sidebar2"];
+
+  if (showRight) {
+    drawerClasses = ["sidebar2", "open"];
+  }
   return (
-    <div className="sidebar2 relative">
+    <div className={`sidebar2 relative ${drawerClasses.join(" ")}`}>
       <div className="search-input relative">
         <img src={SearchIcon} className="absolute left-5" />
         <input type="text" className="s-input" placeholder="search your profile" />
@@ -149,19 +161,56 @@ const SidebarProfile = ({}) => {
 };
 
 const Dashboard = () => {
+  const [leftSideDrawerOpen, setLeftSideDrawer] = useState(false);
+  const [leftSideDrawerOpenWeb, setLeftSideDrawerWeb] = useState(true);
+  const [rightSideDrawerOpen, setRightSideDrawer] = useState(false);
+  const [rightSideDrawerOpenWeb, setRightSideDrawerWeb] = useState(true);
+
+  const leftDrawerToggleClickHandler = () => {
+    setLeftSideDrawer({ leftSideDrawerOpen: !leftSideDrawerOpen });
+  };
+  const rightDrawerToggleClickHandler = () => {
+    setRightSideDrawer({ rightSideDrawerOpen: !rightSideDrawerOpen });
+  };
+
+  const backDropClickHandler = () => {
+    setLeftSideDrawer(false);
+    setRightSideDrawer(false);
+  };
+
+  let backdrop;
+
+  if (rightSideDrawerOpen || leftSideDrawerOpen) {
+    // sideDrawer = <SideDrawer />;
+    backdrop = <BackDrop click={backDropClickHandler} />;
+  }
+
   let { path } = useRouteMatch();
   return (
     <Suspense fallback={<Loading />}>
       <div className="dash-contents flex items-center">
-        <Sidebar />
+        {/* <Sidebar show={leftSideDrawerOpenWeb} /> */}
+        <Sidebar show={leftSideDrawerOpen} />
+        {backdrop}
         <div className="mainContents">
           <Switch>
             <Route path={`${path}/${dashboardRoutes.home}`} render={props => <Home {...props} />} />
-            <Route path={`${path}/${dashboardRoutes.profile}`} render={props => <Profile {...props} />} />
+            <Route
+              path={`${path}/${dashboardRoutes.profile}`}
+              render={props => (
+                <Profile
+                  {...props}
+                  leftDrawer={leftDrawerToggleClickHandler}
+                  rightDrawer={rightDrawerToggleClickHandler}
+                />
+              )}
+            />
+            <Route path={`${path}/${dashboardRoutes.categories}`} render={props => <Categories {...props} />} />
             <Redirect to={`${path}/${dashboardRoutes.home}`} />
           </Switch>
         </div>
-        <SidebarProfile />
+        {/* <SidebarProfile /> */}
+        {/* <SidebarProfile showRight={rightSideDrawerOpen} /> */}
       </div>
     </Suspense>
   );
