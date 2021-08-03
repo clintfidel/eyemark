@@ -170,10 +170,10 @@ const Dashboard = () => {
   const [rightSideDrawerOpenWeb, setRightSideDrawerWeb] = useState(true);
 
   const leftDrawerToggleClickHandler = () => {
-    setLeftSideDrawer({ leftSideDrawerOpen: !leftSideDrawerOpen });
+    setLeftSideDrawer(!leftSideDrawerOpen);
   };
   const rightDrawerToggleClickHandler = () => {
-    setRightSideDrawer({ rightSideDrawerOpen: !rightSideDrawerOpen });
+    setRightSideDrawer(!rightSideDrawerOpen);
   };
 
   const backDropClickHandler = () => {
@@ -206,7 +206,7 @@ const Dashboard = () => {
             <Redirect to={`${path}/${dashboardRoutes.home}`} />
           </Switch>
         </div>
-        <SidebarProfile showRight={rightSideDrawerOpen} />
+        {/* <SidebarProfile showRight={rightSideDrawerOpen} /> */}
       </div>
     </Suspense>
   );
