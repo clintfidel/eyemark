@@ -1,14 +1,16 @@
 import React from "react";
 import { LogoSmall } from "assets/icons(svg)";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 import { Input, Button } from "components";
 import { createAccountRoutes } from "routes/routes-list";
 
 export function Screen3({ history }) {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Eyemark - Password</title>
+        <title>Eyemark - {t("auth:Password")}</title>
       </Helmet>
       <div className="onboarding-container flex items-center justify-center">
         <div className="card px-8 py-8 overflow-hidden relative">

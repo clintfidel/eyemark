@@ -5,11 +5,13 @@ import { Helmet } from "react-helmet";
 import { Button } from "components";
 import { createAccountRoutes } from "routes/routes-list";
 import { ArrowBack } from "@material-ui/icons";
+import { useTranslation } from "react-i18next";
 import ReactCrop from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import "./style.scss";
 
 export function Screen4({ history }) {
+  const { t } = useTranslation();
   const imgRef = useRef(null);
   const [upImg, setUpImg] = useState();
   const [upload, setUpload] = useState(false);
@@ -80,7 +82,7 @@ export function Screen4({ history }) {
   return (
     <>
       <Helmet>
-        <title>Eyemark - Upload Profile Picture</title>
+        <title>Eyemark - {t("auth:Upload Profile Picture")}</title>
       </Helmet>
       <div
         className="onboarding-container flex items-center justify-center placeholder"
@@ -94,14 +96,14 @@ export function Screen4({ history }) {
                 <div style={{ width: "139px" }}>
                   {!done ? (
                     <Button
-                      text="Skip for now"
+                      text={t("auth:Skip for now")}
                       className="btn-outline btn-size-sm-h btn-no-bg"
                       onClick={() => history.push(`/onboarding/${createAccountRoutes.screen5}`)}
                     />
                   ) : null}
                 </div>
               </div>
-              <p className="text-base font-semibold mb-2.5">Upload a profile picture</p>
+              <p className="text-base font-semibold mb-2.5">{t("auth:Upload a profile picture")}</p>
               <p className="text-sm font-medium mb-14 w-96 subtitle" style={{ color: "#4B5667" }}>
                 Lorem ipsum dolor sit amet, nonummy nibh euismod tincidunt ut laoreet dolore magna{" "}
               </p>
@@ -137,7 +139,7 @@ export function Screen4({ history }) {
               <div className="absolute bottom-0 inset-x-0 footer w-full h-20 px-6 flex items-center justify-end">
                 {done ? (
                   <Button
-                    text="Next"
+                    text={t("auth:Next")}
                     className="btn-size-sm"
                     onClick={() => history.push(`/onboarding/${createAccountRoutes.screen5}`)}
                   />
@@ -151,9 +153,9 @@ export function Screen4({ history }) {
                   <div onClick={reset}>
                     <ArrowBack className="mr-3" style={{ cursor: "pointer" }} />
                   </div>
-                  <p className="font-medium">Edit picture</p>
+                  <p className="font-medium">{t("auth:Edit picture")}</p>
                 </div>
-                <Button text="Apply" className="btn-size-sm btn-no-shadow" onClick={doneUp} />
+                <Button text={t("auth:Apply")} className="btn-size-sm btn-no-shadow" onClick={doneUp} />
               </div>
               <div>
                 <ReactCrop

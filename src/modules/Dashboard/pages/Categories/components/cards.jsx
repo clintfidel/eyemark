@@ -67,7 +67,7 @@ function Card02({ project_name, date, description, insight }) {
       </div>
       <p className="description">{description}</p>
       <a href="#" className="link">
-        View Project
+        {t("categories:View Project")}
       </a>
       <div className="insights flex items-center justify-between">
         <div className="flex items-center">

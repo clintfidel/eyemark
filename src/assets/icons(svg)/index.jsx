@@ -51,11 +51,26 @@ import Ministries from "./ministries.svg";
 import States from "./states.svg";
 import ArrowBack from "./arrow-back.svg";
 import Filter from "./filter.svg";
+import ChevronRight from "./chevron-right.svg";
+
+import EditProfile from "./settings/edit-profile.svg";
+import ChangePassword from "./settings/change-password.svg";
+import Kyc from "./settings/kyc.svg";
+import DeactivateAccount from "./settings/deactivate-account.svg";
+import Upload from "./settings/upload.svg";
+import SuccessCup from "./settings/success-cup.svg";
 import EyeMark from "./eyemark.svg";
 
 //global export
 
 export {
+  SuccessCup,
+  Upload,
+  EditProfile,
+  ChangePassword,
+  Kyc,
+  DeactivateAccount,
+  ChevronRight,
   Filter,
   ArrowBack,
   Sectors,

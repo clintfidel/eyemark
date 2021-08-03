@@ -9,7 +9,7 @@ export default function Search() {
   return (
     <div className="search flex items-center">
       <img src={SearchIcon} alt="search" />
-      <input className="search-input" placeholder={t("categories:Search...")} />
+      <input className="search-input" placeholder={`${t("categories:Search")}...`} />
       <div className="filters flex items-center justify-between" onClick={() => setShowFilter(!showFilter)}>
         <img src={Filter} alt="filter" />
         <p>{t("categories:Filter")}</p>
@@ -25,7 +25,7 @@ export default function Search() {
             );
           })}
           <div className="budget">
-            <p>Budget - NGN</p>
+            <p>{t("categories:Budget")} - NGN</p>
             <input type="range" className="range" />
             <div className="inputs flex items-center justify-between">
               <input placeholder="500,000" />
@@ -34,8 +34,8 @@ export default function Search() {
             </div>
           </div>
           <div className="buttons flex items-center justify-between">
-            <button className="clear">Clear all</button>
-            <button className="apply">Apply</button>
+            <button className="clear">{t("categories:Clear all")}</button>
+            <button className="apply">{t("categories:Apply")}</button>
           </div>
         </div>
       ) : null}

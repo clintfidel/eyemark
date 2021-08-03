@@ -20,6 +20,9 @@ import {
 const Profile = React.lazy(() => import("./pages/Profile"));
 const Home = React.lazy(() => import("./pages/Home"));
 const Categories = React.lazy(() => import("./pages/Categories"));
+const Settings = React.lazy(() => import("./pages/Settings"));
+import LeftMenu from "./leftMenu";
+import RightMenu from "./rightMenu";
 import "./style.scss";
 
 const Sidebar = ({ show }) => {
@@ -117,7 +120,7 @@ const SidebarProfile = ({ showRight }) => {
     drawerClasses = ["sidebar2", "open"];
   }
   return (
-    <div className={`sidebar2 relative ${drawerClasses.join(" ")}`}>
+    <div className={`relative ${drawerClasses.join(" ")}`}>
       <div className="search-input relative">
         <img src={SearchIcon} className="absolute left-5" />
         <input type="text" className="s-input" placeholder="search your profile" />
@@ -181,36 +184,29 @@ const Dashboard = () => {
   let backdrop;
 
   if (rightSideDrawerOpen || leftSideDrawerOpen) {
-    // sideDrawer = <SideDrawer />;
     backdrop = <BackDrop click={backDropClickHandler} />;
   }
 
   let { path } = useRouteMatch();
   return (
     <Suspense fallback={<Loading />}>
+      <div className="flex items-center justify-between mobile-navigation">
+        <LeftMenu click={leftDrawerToggleClickHandler} />
+        <RightMenu click={rightDrawerToggleClickHandler} />
+      </div>
+      {backdrop}
       <div className="dash-contents flex items-center">
-        {/* <Sidebar show={leftSideDrawerOpenWeb} /> */}
         <Sidebar show={leftSideDrawerOpen} />
-        {backdrop}
         <div className="mainContents">
           <Switch>
             <Route path={`${path}/${dashboardRoutes.home}`} render={props => <Home {...props} />} />
-            <Route
-              path={`${path}/${dashboardRoutes.profile}`}
-              render={props => (
-                <Profile
-                  {...props}
-                  leftDrawer={leftDrawerToggleClickHandler}
-                  rightDrawer={rightDrawerToggleClickHandler}
-                />
-              )}
-            />
+            <Route path={`${path}/${dashboardRoutes.profile}`} render={props => <Profile {...props} />} />
             <Route path={`${path}/${dashboardRoutes.categories}`} render={props => <Categories {...props} />} />
+            <Route path={`${path}/${dashboardRoutes.settings}`} render={props => <Settings {...props} />} />
             <Redirect to={`${path}/${dashboardRoutes.home}`} />
           </Switch>
         </div>
-        {/* <SidebarProfile /> */}
-        {/* <SidebarProfile showRight={rightSideDrawerOpen} /> */}
+        <SidebarProfile showRight={rightSideDrawerOpen} />
       </div>
     </Suspense>
   );

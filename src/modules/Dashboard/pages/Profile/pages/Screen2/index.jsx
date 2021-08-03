@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import {
@@ -14,19 +14,26 @@ import {
   SmallImg11,
   BigImage
 } from "assets/icons(svg)";
-
 import "./style.scss";
+import { PostModal } from "modules/Dashboard/components";
 
 export function Screen2({ history }) {
   const { t } = useTranslation();
+  const [showPostModal, setShowPostModal] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(null);
+  const onImageClick = index => {
+    setCurrentIndex(index);
+    setShowPostModal(true);
+  };
   return (
     <>
       <Helmet>
         <title>Eyemark - Media</title>
       </Helmet>
+      {showPostModal ? <PostModal action={() => setShowPostModal(false)} index={1} /> : null}
       <div className="profile-media">
         <div className="gallery">
-          <figure className="gallery__item gallery__item--1">
+          <figure onClick={() => onImageClick(1)} className="gallery__item gallery__item--1">
             <img src={SmallImg1} className="gallery__img" alt="Image 1" />
           </figure>
           <figure className="gallery__item gallery__item--2">

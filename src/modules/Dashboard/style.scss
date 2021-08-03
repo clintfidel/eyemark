@@ -9,6 +9,18 @@
   z-index: 100;
 }
 
+.mobile-navigation {
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999999;
+  padding: 0 20px;
+  display: none;
+}
+
 .horizontal-line {
   width: 100%;
   margin-top: 33px;
@@ -268,7 +280,7 @@
   }
 
   .mainContents {
-    width: 56%;
+    flex: 1;
     height: 100%;
     overflow-y: scroll;
     background: #f5f4f0;
@@ -280,6 +292,12 @@
 
 // code to optimize mobile responsiveness
 @media screen and (max-width: 488px) {
+  .mobile-navigation {
+    display: flex;
+  }
+  .dash-contents {
+    margin-top: 64px;
+  }
   .sidebar {
     display: block !important;
     width: 70% !important;
@@ -300,8 +318,35 @@
     position: relative !important;
     overflow: hidden;
     padding: 0 0px !important;
-
   }
+
+  .sidebar2 {
+    display: block !important;
+    width: 100% !important;
+    position: relative !important;
+    margin: 25px 0px !important;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1200;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+  }
+
+  .sidebar2.open {
+    transform: translateX(0);
+  }
+
+  .sidebar2 .bio {
+    text-align: justify !important;
+    padding-bottom: 0% !important;
+    margin-bottom: 10px !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+  }
+  .sidebar2 .footer {
+    width: 100% !important;
+    position: relative !important;
+  }
+
   .mainContents {
     display: inline !important;
     width: 100% !important;
@@ -313,16 +358,16 @@
     border-left: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .mainContents .navigation {
     margin: 0px !important;
     overflow-x: scroll !important;
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
     -webkit-box-sizing: border-box !important;
-            box-sizing: border-box !important;
+    box-sizing: border-box !important;
   }
   .mainContents .navigation .nav {
     width: 100% !important;
@@ -342,7 +387,7 @@
     width: 100%;
     padding: 0 15px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   .mainContents .content .profile-eyemarked img.mr-5 {
     margin-right: 0.1rem !important;
@@ -373,7 +418,7 @@
     width: 100vw !important;
     padding: 0 10px !important;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   /* .mainContents .content .profile-media .gallery {
     display: -ms-grid;
@@ -432,16 +477,18 @@
     display: flex !important;
     padding: 5px !important;
     -ms-flex-line-pack: center !important;
-        align-content: center !important;
+    align-content: center !important;
   }
   .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 p.hour {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
     font-size: xx-small;
   }
-  .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 p.hour .stat, .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 p.hour .on, .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 p.hour .lag {
+  .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 p.hour .stat,
+  .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 p.hour .on,
+  .mainContents .content .postWrapper .postContent .nav4 .within .postTop .postTop2 p.hour .lag {
     font-size: 10px !important;
     height: 10px !important;
   }
@@ -487,7 +534,8 @@
     display: -ms-flexbox !important;
     display: flex !important;
   }
-  .mainContents .content .postWrapper .postContent .nav4 .within .postTop .section10 p.tran, .mainContents .content .postWrapper .postContent .nav4 .within .postTop .section10 p.s {
+  .mainContents .content .postWrapper .postContent .nav4 .within .postTop .section10 p.tran,
+  .mainContents .content .postWrapper .postContent .nav4 .within .postTop .section10 p.s {
     border-right: 10px !important;
   }
   .mainContents .content .postWrapper .postContent .nav4 .within .postTop .section10 p.tran {
@@ -505,7 +553,8 @@
     letter-spacing: 0.05em;
     color: #757575;
   }
-  .mainContents .content .postWrapper .postContent .nav4 .within .section6 .hr, .mainContents .content .postWrapper .postContent .nav4 .within .section6 .two {
+  .mainContents .content .postWrapper .postContent .nav4 .within .section6 .hr,
+  .mainContents .content .postWrapper .postContent .nav4 .within .section6 .two {
     content: " ";
     position: absolute;
     bottom: -0.7rem;
@@ -520,8 +569,8 @@
     display: -ms-flexbox !important;
     display: flex !important;
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
     margin: 0px 0px 0px 20px !important;
     height: 150px !important;
     overflow-x: scroll !important;
@@ -529,7 +578,8 @@
   .mainContents .content .postWrapper .postContent .postBottom {
     margin-top: 0 !important;
   }
-  .mainContents .content .postWrapper .postContent .hr, .mainContents .content .postWrapper .postContent .postProfileImage::after {
+  .mainContents .content .postWrapper .postContent .hr,
+  .mainContents .content .postWrapper .postContent .postProfileImage::after {
     content: " ";
     position: absolute;
     bottom: -0.7rem;
@@ -538,29 +588,6 @@
     left: 15px;
     top: 1px;
     background: #dcdcdc;
-  }
-  .sidebar2 {
-    width: 100% !important;
-    height: 100% !important;
-    margin: 25px 0px !important;
-    z-index: 200;
-    transform: translateX(0);
-    transition: transform 0.3s ease-out;
-  }
-
-  .sidebar2.open {
-    transform: translateX(0);
-  }
-  .sidebar2 .bio {
-    text-align: justify !important;
-    padding-bottom: 0% !important;
-    margin-bottom: 10px !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-  }
-  .sidebar2 .footer {
-    width: 100% !important;
-    position: relative !important;
   }
 }
 
