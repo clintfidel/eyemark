@@ -1,17 +1,21 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .profile-posts {
   width: 100%;
   padding: 0 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .postWrapper {
   background-color: #fff;
   border-radius: 8px;
   margin-bottom: 40px;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .postContent {
@@ -30,8 +34,11 @@
 }
 
 .section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-top: 10px;
 }
 
@@ -67,8 +74,13 @@
 }
 
 .name-Active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 10px;
 }
 
@@ -106,16 +118,16 @@
   font-weight: 500;
   font-size: 12.8px;
   line-height: 148.8%;
-  // color: #252117;
   width: 87%;
   word-break: break-all;
 }
 
 .section7 {
   width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
-  // margin-left: -1rem;
 }
 
 .section7 img {
@@ -127,6 +139,8 @@
 }
 
 .nav4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 25px 9px 9px 9px;
   border: 1px solid #dcdcdc;
@@ -148,6 +162,8 @@
 }
 
 .circle2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 10px;
 }
@@ -166,8 +182,13 @@
 }
 
 .postTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .within {
@@ -176,20 +197,31 @@
 }
 
 .postTop2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   padding-bottom: 10px;
 }
 
 .postTop2.For9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 10px;
 }
 
 .postTopLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -233,8 +265,12 @@
 }
 
 .tran.s {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 5px 2%;
 }
 
@@ -245,11 +281,13 @@
   padding: 10px;
 }
 
-//Bottom
-
 .postBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
@@ -274,7 +312,8 @@
   font-size: 4px;
   color: #252117;
   background: #f2f0e0;
-  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5), 5px 5px 25px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5), 5px 5px 25px rgba(255, 255, 255, 0.5);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.5), 5px 5px 25px rgba(255, 255, 255, 0.5);
 }
 
 .on {
@@ -315,14 +354,20 @@
 .suspect,
 .excited,
 .more {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  justify-content: space-between;
-  align-content: center !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
   text-align: center;
 }
 
 .expImage {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 19px;
   height: 17px;
   margin-left: -10px;
@@ -331,6 +376,8 @@
 }
 
 .expImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   padding-left: 5px !important;
@@ -342,3 +389,4 @@
   color: #989898;
   padding-top: 5px;
 }
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+.icon-button {
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: none;
+  outline: none !important;
+  text-align: center;
+}
+
+.icon-button:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.css.map */
