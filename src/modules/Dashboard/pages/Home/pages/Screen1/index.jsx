@@ -31,14 +31,14 @@ const Post1 = ({}) => {
           </div>
         </div>
         <div className="section6">
-          <div className="hr"></div>
-          <h6 className="strong">Strongly satisfactory</h6>
-          <p className="sgs">
+          <div className="hr "></div>
+          <h6 className="strong ">Strongly satisfactory</h6>
+          <p className="sgs ">
             SGS INTRON assists our clients with any questions on the performance and durability of road materials and
             products. To this end we offer a wide array of services including testing, research and assessment...
           </p>
         </div>
-        <div className="section7">
+        <div className="section7 img7">
           <img src={Frame1} alt="post-image" className="postImage" />
           <img src={Frame2} alt="post-image" className="postImage" />
           <img src={Frame3} alt="post-image" className="postImage" />
@@ -129,9 +129,9 @@ const Post2 = ({ action }) => {
           </div>
         </div>
         <div className="section6">
-          <div className="hr two"></div>
-          <h6 className="strong">Update title on project</h6>
-          <p className="sgs">
+          <div className="hr two hr2"></div>
+          <h6 className="strong strong2">Update title on project</h6>
+          <p className="sgs sgs2">
             SGS INTRON assists our clients with any questions on the performance and durability of road materials and
             products. To this end we offer a wide array of services including testing, research and assessment.
           </p>

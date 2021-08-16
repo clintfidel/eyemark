@@ -206,7 +206,7 @@ const Dashboard = () => {
             <Redirect to={`${path}/${dashboardRoutes.home}`} />
           </Switch>
         </div>
-        <SidebarProfile showRight={rightSideDrawerOpen} />
+        {/* <SidebarProfile showRight={rightSideDrawerOpen} /> */}
       </div>
     </Suspense>
   );
