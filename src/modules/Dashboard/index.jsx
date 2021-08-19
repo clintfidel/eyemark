@@ -1,6 +1,7 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Switch, Route, useRouteMatch, NavLink, Redirect } from "react-router-dom";
 import { Loading } from "components";
+import BackDrop from "./backdrop";
 import { dashboardRoutes } from "routes/routes-list";
 import {
   SidebarLogo,
@@ -13,17 +14,25 @@ import {
   EyemarkedIcon,
   ProfileIcon,
   SettingsIcon,
+  ProjectsIcon,
   BadgeIcon,
   SearchIcon
 } from "assets/icons(svg)";
 const Profile = React.lazy(() => import("./pages/Profile"));
 const Home = React.lazy(() => import("./pages/Home"));
+const Categories = React.lazy(() => import("./pages/Categories"));
+const Settings = React.lazy(() => import("./pages/Settings"));
 import "./style.scss";
 
-const Sidebar = ({}) => {
+const Sidebar = ({ show }) => {
+  let drawerClasses = ["sidebar"];
+
+  if (show) {
+    drawerClasses = ["sidebar", "open"];
+  }
   let { url } = useRouteMatch();
   return (
-    <div className="sidebar relative">
+    <div className={`sidebar relative ${drawerClasses.join(" ")}`}>
       <div className="logo flex items-center justify-between">
         <img src={SidebarLogo} />
         <img src={CollapseIcon} />
@@ -72,7 +81,7 @@ const Sidebar = ({}) => {
           <p>Settings</p>
         </NavLink>
       </div>
-      <div className="absolute bottom-8 lang left-0 right-0">
+      <div className="absolute bottom-8 lang left-0 right-0 lang">
         <hr className="horizontal-line2" />
         <div className="flex items-center">
           <p className="lang-active">English</p>
@@ -103,9 +112,50 @@ const FollowSuggestion = ({}) => {
   );
 };
 
-const SidebarProfile = ({}) => {
+const Eyemarked = () => {
+  const [clickBtn, setClickBtn] = useState(false);
+  const toggleBtn = () => {
+    if (clickBtn) {
+      setClickBtn(false);
+    } else {
+      setClickBtn(true);
+    }
+  };
   return (
-    <div className="sidebar2 relative">
+    <div className="block mt-5">
+      <div className="flex my-10 justify-between">
+        <div className="flex w-full">
+          <img className="mr-2" src={ProjectsIcon} />
+          <div className="link">
+            <p className="first-text font-bolder">Lekki-Ikoyi Link Bridge</p>
+            <div className="flex mt-2 sub-text-1">
+              Lekki-ikoyi, lagos
+              <span className="text-status text-center mx-2">
+                <p className="text-status-text">STATUS</p>
+              </span>
+              <span className="text-status-2">ongoing</span>
+            </div>
+          </div>
+        </div>
+        <button
+          onClick={toggleBtn}
+          className={`follow-button-e border-dashed ${clickBtn ? "follow-button-click-e" : "follow-button-e"}`}
+        >
+          {clickBtn ? "Unmark" : "Eyemark"}
+        </button>
+      </div>
+    </div>
+  );
+};
+
+const SidebarProfile = () => {
+  // let drawerClasses = ["sidebar2"];
+
+  // if (showRight) {
+  //   drawerClasses = ["sidebar2", "open"];
+  // }
+  return (
+    <div className={"relative sidebar2"}>
       <div className="search-input relative">
         <img src={SearchIcon} className="absolute left-5" />
         <input type="text" className="s-input" placeholder="search your profile" />
@@ -138,6 +188,9 @@ const SidebarProfile = ({}) => {
       </p>
       <hr className="horizontal-line" />
       <h4 className="follow-title">Follow suggestion</h4>
+      <p className="sidebar-sub-text">
+        Keep projects within your supervision by taping on the <br /> Eyemark button.
+      </p>
       <FollowSuggestion />
       <FollowSuggestion />
       <div className="absolute bottom-8 footer left-0 right-0">
@@ -148,20 +201,76 @@ const SidebarProfile = ({}) => {
   );
 };
 
+const SidebarHome = () => {
+  // let drawerClasses = ["sidebar2"];
+
+  // if (showRight) {
+  //   drawerClasses = ["sidebar2", "open"];
+  // }
+  return (
+    <div className={"relative sidebar2"}>
+      <div className="search-input relative">
+        <img src={SearchIcon} className="absolute left-5" />
+        <input type="text" className="s-input" placeholder="search your profile" />
+      </div>
+      <h4 className="follow-title">Projects to watch</h4>
+      <p className="sidebar-sub-text">
+        Keep projects within your supervision by taping on the <br /> Eyemark button.
+      </p>
+      <Eyemarked />
+      <Eyemarked />
+      <Eyemarked />
+      <hr className="horizontal-line" />
+      <h4 className="follow-title">Follow suggestion</h4>
+      <p className="sidebar-sub-text">
+        Keep projects within your supervision by taping on the <br /> Eyemark button.
+      </p>
+      <FollowSuggestion />
+      <FollowSuggestion />
+      <div className="absolute bottom-8 footer left-0 right-0">
+        <hr className="horizontal-line2" />
+        <p> Eyemark &copy; 2021. All right reserved. </p>
+      </div>
+    </div>
+  );
+};
+const link = "profile/posts";
 const Dashboard = () => {
+  const [leftSideDrawerOpen, setLeftSideDrawer] = useState(false);
+
+  const leftDrawerToggleClickHandler = () => {
+    setLeftSideDrawer({ leftSideDrawerOpen: !leftSideDrawerOpen });
+  };
+
+  const backDropClickHandler = () => {
+    setLeftSideDrawer(false);
+  };
+
+  let backdrop;
+
+  if (leftSideDrawerOpen) {
+    backdrop = <BackDrop click={backDropClickHandler} />;
+  }
+
   let { path } = useRouteMatch();
   return (
     <Suspense fallback={<Loading />}>
+      {backdrop}
       <div className="dash-contents flex items-center">
-        <Sidebar />
+        <Sidebar show={leftSideDrawerOpen} />
         <div className="mainContents">
           <Switch>
-            <Route path={`${path}/${dashboardRoutes.home}`} render={props => <Home {...props} />} />
+            <Route
+              path={`${path}/${dashboardRoutes.home}`}
+              render={props => <Home {...{ props, leftDrawerToggleClickHandler, link }} />}
+            />
             <Route path={`${path}/${dashboardRoutes.profile}`} render={props => <Profile {...props} />} />
+            <Route path={`${path}/${dashboardRoutes.categories}`} render={props => <Categories {...props} />} />
+            <Route path={`${path}/${dashboardRoutes.settings}`} render={props => <Settings {...props} />} />
             <Redirect to={`${path}/${dashboardRoutes.home}`} />
           </Switch>
         </div>
-        <SidebarProfile />
+        {window.location.pathname === `/dashboard/feed` ? <SidebarHome /> : <SidebarProfile />}
       </div>
     </Suspense>
   );

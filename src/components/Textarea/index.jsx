@@ -29,7 +29,7 @@ export default function Textarea({
     getTextValue(value);
   };
   return (
-    <div className={`textarea-container mb-8 txt-sm ${className}`}>
+    <div className={`textarea-container mb-8 ${className}`}>
       <TextField
         InputLabelProps={{
           style: { color: "#A0AFBF", fontSize: "14px", fontWeight: "bold" }

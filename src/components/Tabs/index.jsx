@@ -71,13 +71,13 @@ const Tabs = ({ isTouched }) => {
                       <img className="mr-5" src={Person} />
                       <div className="">
                         <p className="first-text font-bolder">Lekki-Ikoyi Link Bridge</p>
-                        <p className="flex mt-2 sub-text-1">
+                        <div className="flex mt-2 sub-text-1">
                           Lekki-ikoyi, lagos
                           <span className="text-status text-center mx-2">
                             <p className="text-status-text">STATUS</p>
                           </span>
                           <span className="text-status-2">ongoing</span>
-                        </p>
+                        </div>
                       </div>
                     </div>
                     <button

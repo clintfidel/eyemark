@@ -1,0 +1,32 @@
+[
+  {
+    "project_name": "Kashimbila Dam and Hydropower Project, Nigeria",
+    "date": "Started 2 years ago",
+    "description": "Aurecon appointed to carry out a technical feasibility study and detailed design of the spillway at the Kashimbila Dam and Hydropower Project in Nigeria.",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "state": "Lagos",
+      "status": "Ongoing"
+    }
+  },
+  {
+    "project_name": "The Lagos Urban Transport Project",
+    "date": "Started 3 years ago",
+    "description": "The Lagos Urban Transport Project is a public–private partnership that was approved in 2010, receiving its funding from the Nigerian Government and the International Development Association.",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "state": "Imo",
+      "status": "Ongoing"
+    }
+  },
+  {
+    "project_name": "Development of Katampe project",
+    "date": "Started 5 years ago",
+    "description": "The Katampe District Project served as the pilot for the accelerated development of urban districts across the Federal Capital Territory (FCT) and was operated by the FCT Administration in partnership with Deanshanger Project Ltd. The project involved the provision of integrated civil infrastructure and the development of 777 hect...",
+    "insight": {
+      "budget": "9.8 Trillion",
+      "state": "Kano",
+      "status": "Ongoing"
+    }
+  }
+]

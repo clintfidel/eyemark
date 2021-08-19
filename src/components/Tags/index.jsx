@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
 import ReactTooltip from "react-tooltip";
 import "./style.scss";
 
-export default function Tags({ title, spacing, img1, data, img2, className, isTouched }) {
-  const { t } = useTranslation();
+export default function Tags({ title, spacing, img1, data = [], img2, className, isTouched }) {
   const [checkedItems, setCheckedItems] = useState([]);
 
   const onCheckItems = id => {
@@ -34,7 +32,7 @@ export default function Tags({ title, spacing, img1, data, img2, className, isTo
     <div className={spacing}>
       <div className="flex">
         <img src={img1} alt="logo" className="mr-4" />
-        <div className={"text-normal font-semibold text-black my-3 font-medium"}>{t(title)}</div>
+        <div className={"text-normal font-semibold text-black my-3 font-medium"}>{title}</div>
         <img data-tip data-for="eyemark" src={img2} alt="logo" className="ml-3" />
       </div>
       <ReactTooltip

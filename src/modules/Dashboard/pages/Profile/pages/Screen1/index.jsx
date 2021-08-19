@@ -134,9 +134,9 @@ export function Screen1({ history }) {
               <div className="hr two"></div>
               <h6 className="strong">strongly satisfactory</h6>
               <p className="sgs">
-                SGS INTRON assists our clients with any questions on the performance and <br />
-                durability of road materials and products. To this end we offer a wide array of <br />
-                services including testing, research and assessment...
+                SGS INTRON assists our clients with any questions on the performance and durability of road materials
+                and products. To this end we offer a wide array of services including testing, research and
+                assessment...
               </p>
             </div>
             <div className="nav4">
@@ -149,20 +149,23 @@ export function Screen1({ history }) {
                       </div>
                       <div className="name">
                         <h2 className="berger">Lagos-Ibadan Expressway Construction</h2>
-                        <p className="hour">
-                          started 3 years ago <span className="lag">LAGOS - IBADAN.</span>
-                          <span className="stat">status</span> <span className="on">ONGOING</span>
-                        </p>
+                        <div className="flex mt-2 sub-text-1">
+                          Started 3 years ago
+                          <span className="text-status text-center mx-2">
+                            <p className="text-status-text">STATUS</p>
+                          </span>
+                          <span className="text-status-2">ongoing</span>
+                        </div>
                       </div>
                     </div>
-                    <div className="circle2">
+                    <div className="circle2 proj">
                       <p className="c two">project</p>
                       <img src={EyeMark} alt="Profile-Picture" className="postProfileImage" />
                     </div>
                   </div>
                   <div className="section10">
                     <h4 className="prog">Update title on project</h4>
-                    <p className="tran s">
+                    <div className="tran s">
                       <div className="set budget">
                         <span className="setSpan">BUDGET</span>
                         <h3>150BN</h3>
@@ -178,7 +181,7 @@ export function Screen1({ history }) {
                         <h3>😆 EXCITED</h3>
                       </div>
                       <button className="button">Unmarked</button>
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>

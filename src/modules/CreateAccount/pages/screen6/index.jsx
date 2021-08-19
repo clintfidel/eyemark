@@ -5,15 +5,17 @@ import { Background2 } from "assets/images(png)";
 import { Helmet } from "react-helmet";
 import { Button, Tags } from "components";
 import { states, ministry, sdg } from "utils";
+import { useTranslation } from "react-i18next";
 import { createAccountRoutes } from "routes/routes-list";
 import "./style.scss";
 
 export function Screen6({ history }) {
+  const { t } = useTranslation();
   const [tagClicked, setTagClicked] = useState(false);
   return (
     <>
       <Helmet>
-        <title>Eyemark - Interests</title>
+        <title>Eyemark - {t("auth:Interests")}</title>
       </Helmet>
       <div
         className="onboarding-container flex items-center justify-center placeholder"
@@ -25,7 +27,7 @@ export function Screen6({ history }) {
             <div style={{ width: "139px" }}>
               {!tagClicked ? (
                 <Button
-                  text="Skip for now"
+                  text={t("auth:Skip for now")}
                   className="btn-outline btn-size-sm-h btn-no-bg"
                   onClick={() => history.push(`/onboarding/${createAccountRoutes.screen7}`)}
                 />
@@ -68,13 +70,13 @@ export function Screen6({ history }) {
           <div className="absolute bottom-0 inset-x-0 footer w-full h-20 px-6 flex items-center justify-between">
             <Button
               onClick={() => history.push(`/onboarding/${createAccountRoutes.screen5}`)}
-              text="Back"
+              text={t("auth:Back")}
               className="btn-size-sm btn-no-bg"
             />
             {tagClicked ? (
               <Button
                 onClick={() => history.push(`/onboarding/${createAccountRoutes.screen7}`)}
-                text="Next"
+                text={t("auth:Next")}
                 className="btn-size-sm"
               />
             ) : null}

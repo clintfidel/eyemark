@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { useTranslation } from "react-i18next";
 import {
   JbLogo,
   ConstructionMan,
@@ -158,10 +157,13 @@ const Post2 = ({ action }) => {
                   </div>
                   <div className="name">
                     <h2 className="berger">Lagos-Ibadan Expressway Construction</h2>
-                    <p className="hour">
-                      started 3 years ago <span className="lag">LAGOS - IBADAN.</span>
-                      <span className="stat">status</span> <span className="on">ONGOING</span>
-                    </p>
+                    <div className="flex mt-2 sub-text-1">
+                      Started 3 years ago
+                      <span className="text-status text-center mx-2">
+                        <p className="text-status-text">STATUS</p>
+                      </span>
+                      <span className="text-status-2">ongoing</span>
+                    </div>
                   </div>
                 </div>
                 <div className="circle2">
@@ -171,7 +173,7 @@ const Post2 = ({ action }) => {
               </div>
               <div className="section10">
                 <h4 className="prog"></h4>
-                <p className="tran s">
+                <div className="tran s">
                   <div className="set budget">
                     <span className="setSpan">BUDGET</span>
                     <h3>150BN</h3>
@@ -187,7 +189,7 @@ const Post2 = ({ action }) => {
                     <h3>😆 EXCITED</h3>
                   </div>
                   <button className="button">Eyemark</button>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -227,7 +229,6 @@ const Post2 = ({ action }) => {
 };
 
 export function Screen1({ history }) {
-  const { t } = useTranslation();
   const { url } = useRouteMatch();
   return (
     <>

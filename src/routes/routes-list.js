@@ -26,6 +26,12 @@ export const profileRoutes = {
   screen5: "following"
 };
 
+export const categoriesRoutes = {
+  screen2: "sectors",
+  screen3: "sdgs",
+  screenLast: "cats"
+};
+
 export const createAccountRoutes = {
   screen1: "create-account",
   screen2: "verify-code",
@@ -33,5 +39,6 @@ export const createAccountRoutes = {
   screen4: "upload",
   screen5: "more-info",
   screen6: "interests",
-  screen7: "follow"
+  screen7: "follow",
+  screen8: "done"
 };

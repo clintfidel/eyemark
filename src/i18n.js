@@ -23,7 +23,7 @@ i18n
       order: ["queryString", "cookie"],
       cache: ["cookie"]
     },
-    ns: ["translation"],
+    ns: ["translation", "categories", "auth", "settings"],
     interpolation: {
       escapeValue: false
     },

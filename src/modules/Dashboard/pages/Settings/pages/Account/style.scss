@@ -1,0 +1,52 @@
+.settings-account {
+  width: 100%;
+  background-color: #ebebeb;
+  min-height: 100vh;
+  .navigation {
+    width: 100%;
+    height: 64px;
+    background-color: #fff;
+    padding: 0 79px;
+    margin-bottom: 52px;
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #252117;
+    }
+  }
+  .content {
+    padding: 0 79px;
+  }
+}
+
+.settings-account-modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal-box {
+    width: 322px;
+    height: 181px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    p {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: #252117;
+    }
+    hr {
+      margin: 25px 0;
+    }
+  }
+}
