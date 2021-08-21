@@ -24,7 +24,7 @@ export function Screen2({ history }) {
       </div>
       <div className="screen2-categories">
         <Search />
-        <Sort items={["Name", "Budget", "GDP Share", "Active Projects", "Progress", "Reviews"]} />
+        <Sort items={["Name", "Budget2", "GDP Share", "Active Projects", "Progress", "Reviews"]} />
         <div className="content">
           {MockSectors.map((s, i) => {
             return (
