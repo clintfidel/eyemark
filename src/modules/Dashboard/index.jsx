@@ -31,6 +31,7 @@ const Sidebar = ({ show }) => {
     drawerClasses = ["sidebar", "open"];
   }
   let { url } = useRouteMatch();
+
   return (
     <div className={`sidebar relative ${drawerClasses.join(" ")}`}>
       <div className="logo flex items-center justify-between">
@@ -44,7 +45,7 @@ const Sidebar = ({ show }) => {
             className="pp"
           />
           <div className="info">
-            <h2 className="full-name">Deborah Olabanji</h2>
+            <h2 className="full-name">Deborah Olabanji2</h2>
             <p className="username">@debbie_more</p>
           </div>
         </div>
