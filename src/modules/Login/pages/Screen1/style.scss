@@ -61,6 +61,10 @@ p {
   background-color: #f5f4f0;
 }
 
+::-webkit-input-placeholder {
+  color: red !important;
+}
+
 .footer {
   height: 68px;
   border-top: 1px solid #dcdcdc;
