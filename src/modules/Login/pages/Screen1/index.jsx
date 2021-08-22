@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Background, Logo, GooglePlay, AppStore } from "assets/images(png)";
 import { Input, Button } from "components";
 import "./style.scss";
+//import "./custom.css";
 import { Google, Facebook, Twitter, LogoBlack } from "assets/icons(svg)";
 import { createAccountRoutes } from "routes/routes-list";
 import { useTranslation } from "react-i18next";

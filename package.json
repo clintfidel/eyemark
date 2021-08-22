@@ -81,6 +81,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
+    "i18next-scanner": "^3.0.0",
     "moxios": "^0.4.0",
     "netlify-cli": "^3.13.0",
     "nightwatch": "^1.6.4",
@@ -88,7 +89,6 @@
     "prettier": "^2.2.1",
     "react-test-renderer": "^17.0.2",
     "redux-mock-store": "^1.5.4",
-    "i18next-scanner": "^3.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.4"
   }
 }

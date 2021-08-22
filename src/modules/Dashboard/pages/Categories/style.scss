@@ -121,6 +121,7 @@
       height: 70px;
       border-bottom: 1px solid #dcdcdc;
       padding: 0 30px;
+      overflow-x: scroll;
       .t {
         font-style: normal;
         font-weight: bold;
@@ -184,7 +185,8 @@
       .text {
         width: 65%;
         height: 100%;
-        padding: 27px 40px;
+        padding: 27px 15px;
+        overflow-y: scroll;
         .title {
           font-style: normal;
           font-weight: bold;

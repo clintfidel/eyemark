@@ -30,7 +30,7 @@ export default function Input({ placeholder, type = "text" }) {
         InputProps={{ classes }}
         label={placeholder}
         type={showPassword ? "password" : "text"}
-        style={{ width: "100%", height: "100%", marginTop: "5px" }}
+        style={{ width: "100%", height: "100%", marginTop: "-5px" }}
       />
       {type === "password" ? (
         <div className="right-icon" onClick={onPasswordClick}>
