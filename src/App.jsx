@@ -3,8 +3,9 @@ import history from "routes/history";
 import { Error, Loading } from "components";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import Login from "modules/Login";
-import Dashboard from "modules/Dashboard";
-import CreateAccount from "modules/CreateAccount";
+import Citizen from "modules/Citizen";
+import Contractors from "modules/Contractors";
+import Mda from "modules/Mda";
 import { withTranslation } from "react-i18next";
 import "i18n";
 import PrivateRoute from "routes/privateroute";
@@ -36,8 +37,9 @@ class App extends Component {
         <Router history={history}>
           <Switch>
             <Route path="/login" component={Login} />
-            <Route path="/onboarding" component={CreateAccount} />
-            <PrivateRoute path="/dashboard" component={Dashboard} />
+            <PrivateRoute path="/mda" component={Mda} />
+            <PrivateRoute path="/citizen" component={Citizen} />
+            <PrivateRoute path="/contractors" component={Contractors} />
             <Redirect to="/login" />
           </Switch>
         </Router>

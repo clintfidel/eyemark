@@ -3,9 +3,7 @@ import { Helmet } from "react-helmet";
 import { Background, Logo, GooglePlay, AppStore } from "assets/images(png)";
 import { Input, Button } from "components";
 import "./style.scss";
-//import "./custom.css";
 import { Google, Facebook, Twitter, LogoBlack } from "assets/icons(svg)";
-import { createAccountRoutes } from "routes/routes-list";
 import { useTranslation } from "react-i18next";
 
 export function Screen1({ history }) {
@@ -37,10 +35,7 @@ export function Screen1({ history }) {
                 <p className="mr-1 text-base font-medium" style={{ color: "#ADADAD" }}>
                   {t("auth:Dont have an account")}?
                 </p>
-                <p
-                  className="text-white text-base font-bold cursor-pointer"
-                  onClick={() => history.push(`/onboarding/${createAccountRoutes.screen1}`)}
-                >
+                <p className="text-white text-base font-bold cursor-pointer" onClick={() => history.push("/citizen")}>
                   {t("auth:Create Account")}
                 </p>
               </div>
@@ -87,10 +82,7 @@ export function Screen1({ history }) {
           <p className="mr-1 text-base font-medium" style={{ color: "#4B5667" }}>
             {t("auth:Dont have an account")}?
           </p>
-          <p
-            className="text-base font-bold cursor-pointer"
-            onClick={() => history.push(`/onboarding/${createAccountRoutes.screen1}`)}
-          >
+          <p className="text-base font-bold cursor-pointer" onClick={() => history.push("/citizen")}>
             {t("auth:Create Account")}
           </p>
         </div>

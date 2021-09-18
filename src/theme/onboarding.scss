@@ -1,0 +1,100 @@
+.onboarding-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fcfaf7;
+  @media only screen and (max-width: 750px) {
+    padding: 0 20px;
+  }
+}
+
+.upload-container {
+  width: 223px;
+  height: 223px;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  .add-image {
+    z-index: 5;
+  }
+}
+
+.card {
+  width: 607px;
+  height: 644px;
+  box-shadow: -5px -5px 25px rgba(113, 129, 149, 0.2), 5px 5px 20px rgba(61, 132, 172, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+  .footer {
+    background-color: #252117;
+  }
+  .subtitle {
+    @media only screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+}
+
+.placeholder {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.MuiInputLabel-formControl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 15px) scale(1) !important;
+}
+
+.MuiInputLabel-shrink {
+  transform: translate(0, 1.5px) scale(0.75) !important;
+  transform-origin: top left;
+}
+
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.parent-tags {
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  color: #252117;
+  flex-wrap: wrap;
+  flex: 1;
+  display: flex;
+  outline: none;
+  height: 95px;
+  overflow-y: scroll;
+}
+
+.tags-container {
+  overflow-y: scroll;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skip {
+  border-radius: 30px;
+  border: 2px solid #f3f3f3;
+  padding: 5px 8px !important;
+  font-style: normal;
+  background-color: transparent !important;
+  font-weight: 600 !important;
+  font-size: 16px;
+  line-height: 22px;
+  width: 26%;
+  height: 15%;
+  letter-spacing: 0.02em;
+  color: #252117;
+}
+
+.bell {
+  width: 74px;
+  height: 74px;
+}

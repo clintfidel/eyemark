@@ -25,7 +25,7 @@ module.exports = {
       }
     },
     lngs: ["en", "yoruba", "igbo"],
-    ns: ["translation"],
+    ns: ["translation", "auth", "categories", "settings"],
     defaultLng: "en",
     defaultNs: "translation",
     defaultValue: function (lng, ns, key) {

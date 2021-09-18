@@ -1,22 +1,53 @@
 //import all assets/icons
 import Logo from "./logo.svg";
+import Timeline from "./timeline.svg";
+import FHA from "./fha.svg";
+import Info from "./info.svg";
+import Budget from "./budget.svg";
+import Budget2 from "./budget2.svg";
+import Budget3 from "./budget3.svg";
+import Budget4 from "./budget4.svg";
+import StartDate from "./startdate.svg";
+import EndDate from "./enddate.svg";
+import RemoveIcon from "./removeIcon.svg";
+import AddMore from "./add-more.svg";
+import DeleteIcon from "./deleteIcon.svg";
+import QuickActions from "./quickActions.svg";
 import LogoBlack from "./logo-black.svg";
 import Eye from "./eye.svg";
+import Pointer from "./pointer.svg";
+import PencilIcon from "./pencilIcon.svg";
+import DateSeperator from "./date-seperator.svg";
+import CreateProjectIcon from "./createProjectIcon.svg";
+import CreateSurveyIcon from "./createSurveyIcon.svg";
+import InviteCollaboratorIcon from "./inviteCollaboratorIcon.svg";
 import Google from "./g.svg";
+import ContractorIcon from "./contractorIcon.svg";
 import Facebook from "./fb.svg";
 import Twitter from "./tw.svg";
 import LogoSmall from "./logo-sm.svg";
 import Add from "./add.svg";
+import ArrowForward from "./arrow-forward.svg";
+import Wave from "./wave.svg";
+import ShellImage from "./shellImage.svg";
+import SurveyIcon from "./surveyIcon.svg";
 import Location from "./location.svg";
 import Tooltip from "./tooltip.svg";
+import MdaLogo from "./mda-side-logo.svg";
+import FilterIcon from "./filterIcon.svg";
 import Person from "./person.svg";
+import GraphIcon from "./graphIcon.svg";
 import Ministry from "./ministry.svg";
 import Verified from "./verified.svg";
 import SDG from "./sdg.svg";
 import SidebarLogo from "./sidebarLogo.svg";
+import SidebarLogoWhite from "./sidebarLogoWhite.svg";
 import CollapseIcon from "./collapseIcon.svg";
 import MoreIcon from "./more-icon.svg";
+import MoreIconBlack from "./more-icon-b.svg";
+import DocIcon from "./docIcon.svg";
 import LadyImg from "./lady.svg";
+import ProjectIcon from "./projectIcon.svg";
 import HomeIcon from "./homeIcon.svg";
 import FolderIcon from "./folderIcon.svg";
 import SettingsIcon from "./settingsIcon.svg";
@@ -25,6 +56,8 @@ import BadgeIcon from "./badgeIcon.svg";
 import EyemarkedIcon from "./eyemarkedIcon.svg";
 import ProfileIcon from "./profileIcon.svg";
 import NotificationIcon from "./notificationIcon.svg";
+import PushNotificationIcon from "./pushNotificationIcon.svg";
+import EmailNotificationIcon from "./emailNotificationIcon.svg";
 import ProjectsIcon from "./projects.svg";
 import SearchIcon from "./searchIcon.svg";
 import UpVote from "./upvote.svg";
@@ -42,6 +75,7 @@ import SmallImg10 from "./smallImage10.svg";
 import SmallImg11 from "./smallImage11.svg";
 import BigImage from "./bigImage.svg";
 import Comment from "./comment.svg";
+import PageVisits from "./page-visits.svg";
 import Emoji from "./emoji.svg";
 import ArrowDown from "./arrow-down.svg";
 import AddImage from "./add-image.svg";
@@ -60,22 +94,69 @@ import DeactivateAccount from "./settings/deactivate-account.svg";
 import Upload from "./settings/upload.svg";
 import SuccessCup from "./settings/success-cup.svg";
 import EyeMark from "./eyemark.svg";
+import SDGSPoverty from "./sdgs/poverty.svg";
+import SDGSHunger from "./sdgs/hunger.svg";
+import SDGSHealth from "./sdgs/health.svg";
+import SDGSEducation from "./sdgs/education.svg";
+import SDGSEquality from "./sdgs/equality.svg";
+import SDGSWater from "./sdgs/water.svg";
+import SDGSEnergy from "./sdgs/energy.svg";
+import Star from "./star.svg";
+import Circle from "./circle.svg";
+import None from "./none.svg";
+import BorderRight from "./border-right.svg";
 
 //global export
 
 export {
+  Star,
+  Circle,
+  SDGSPoverty,
+  SDGSHunger,
+  SDGSHealth,
+  SDGSEducation,
+  SDGSEquality,
+  SDGSWater,
+  SDGSEnergy,
+  Timeline,
+  Budget,
+  BorderRight,
+  Budget2,
+  None,
+  Budget3,
+  Budget4,
+  StartDate,
+  EndDate,
+  Info,
+  Pointer,
+  MdaLogo,
+  MoreIconBlack,
+  FHA,
+  ArrowForward,
   SuccessCup,
   Upload,
+  ContractorIcon,
   EditProfile,
   ChangePassword,
   Kyc,
+  AddMore,
+  PencilIcon,
+  DateSeperator,
+  FilterIcon,
+  SidebarLogoWhite,
   DeactivateAccount,
   ChevronRight,
+  PushNotificationIcon,
+  EmailNotificationIcon,
+  InviteCollaboratorIcon,
+  CreateSurveyIcon,
   Filter,
+  SurveyIcon,
   ArrowBack,
   Arrowback,
   Sectors,
   SDGs,
+  QuickActions,
   Ministries,
   States,
   Logo,
@@ -85,17 +166,25 @@ export {
   Twitter,
   LogoSmall,
   Add,
+  DeleteIcon,
+  Wave,
   Tooltip,
   Location,
   Person,
   Ministry,
   SDG,
+  ProjectIcon,
   Verified,
+  ShellImage,
+  RemoveIcon,
   SidebarLogo,
   CollapseIcon,
+  CreateProjectIcon,
   MoreIcon,
+  DocIcon,
   LadyImg,
   HomeIcon,
+  GraphIcon,
   FolderIcon,
   SettingsIcon,
   CategoryIcon,
@@ -104,6 +193,7 @@ export {
   ProfileIcon,
   NotificationIcon,
   SearchIcon,
+  PageVisits,
   ProjectsIcon,
   SmallImg1,
   SmallImg2,

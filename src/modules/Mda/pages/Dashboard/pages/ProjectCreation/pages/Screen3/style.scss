@@ -1,0 +1,80 @@
+.theory-cont {
+  width: 100%;
+}
+
+.sidebar-theory {
+  width: 25%;
+  height: 500px;
+  border-right: 2px solid #DCDCDC;
+  background: #EBEBEB;
+  border-radius: 8px 0px 0px 0px;
+}
+
+.theory-title-cont {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+.theory-title {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #252117;
+}
+
+.main-theory {
+  background: #EBEBEB;
+  width: 75%;
+  height: 500px;
+  border-radius: 0px 8px 0px 0px;
+}
+
+.main-theory-header {
+  width: 100%;
+}
+
+.theory-title-2 {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #252117;
+}
+
+.main-theory-header1 {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.main-theory-header2 {
+  width: 24%;
+  display: flex;
+  align-items: center;
+}
+
+.point-btn {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #A0AFBF;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.point-btn-text {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}

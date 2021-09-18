@@ -1,0 +1,20 @@
+.select-flex {
+  align-items: center;
+}
+
+.left-field {
+  position: absolute;
+  left: 10px;
+  // top: 0px;
+  right: 10px;
+  cursor: pointer;
+  .field-select {
+    font-family: Filson Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 11px;
+    line-height: 17px;
+    color: #C8C8C8;
+  }
+}

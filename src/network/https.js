@@ -24,6 +24,10 @@ privateInstance.interceptors.request.use(
     const token = localStorage.getItem("token");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
+      config.onUploadProgress = progressEvent => {
+        var percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
+        console.log(percentCompleted);
+      };
     }
     return config;
   },
@@ -36,10 +40,10 @@ export const privateRequest = ({ method = "get", route, payload, responseType = 
   return privateInstance[requestMethod](route, payload).catch(error => Promise.reject(error));
 };
 
-export const publicRequest = ({ method = "get", route, responseType = "json" }) => {
+export const publicRequest = ({ method = "get", route, payload, responseType = "json" }) => {
   publicInstance.defaults.responseType = responseType;
   const requestMethod = method.toLowerCase();
-  return publicInstance[requestMethod](route).catch(error =>
+  return publicInstance[requestMethod](route, payload).catch(error =>
     Promise.reject(error.response ? error.response.data : error.message)
   );
 };

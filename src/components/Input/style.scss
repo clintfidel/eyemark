@@ -1,3 +1,7 @@
+.error-container {
+  border: 1px solid #f44336 !important;
+}
+
 .input-container {
   width: 100%;
   height: 54px;
@@ -23,6 +27,38 @@
     }
     .password {
       height: 10px !important;
+    }
+  }
+  .left-icon {
+    position: absolute;
+    left: 10px;
+    top: 23px;
+    right: 10px;
+    cursor: pointer;
+    img {
+      height: 20px;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+    .field {
+      height: 10px !important;
+    }
+  }
+  .left-field {
+    position: absolute;
+    left: 10px;
+    // top: 0px;
+    right: 10px;
+    cursor: pointer;
+    .field-select {
+      font-family: Filson Pro;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      padding-top: 11px;
+      line-height: 17px;
+      color: #C8C8C8;
     }
   }
 }

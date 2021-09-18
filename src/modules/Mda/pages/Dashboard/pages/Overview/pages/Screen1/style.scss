@@ -1,0 +1,241 @@
+.card-record {
+  width: 32.4%;
+  height: 156px;
+  background: #FEFFFE;
+  border-radius: 8px;
+}
+
+.card-record-deet {
+  width: 36%;
+  height: 483px;
+  background: #FEFFFE;
+  border-radius: 8px;
+}
+.card-record-deet-2-cont {
+  width: 25%;
+  height: 483px;
+}
+
+.card-record-deet-2-top {
+  background: #FEFFFE;
+  border-radius: 8px;
+  width: 100%;
+  height: 156px;
+}
+
+.card-deets-date {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #A0AFBF;
+}
+
+.quick-create {
+  margin: auto;
+  padding-top: 20px;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  height: 95px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #EDF2F7;
+}
+
+.create-text {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  padding-top: 14px;
+  line-height: 10px;
+  text-transform: capitalize;
+  color: #252117;
+}
+
+.card-record-deet-2 {
+  background: #FEFFFE;
+  border-radius: 8px;
+  width: 100%;
+  height: 307px;
+}
+
+.card-deets-text {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #252117;
+}
+
+.card-deets-text-status {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #E4AA24;
+
+}
+
+.see-all {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: "bold";
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #A0AFBF;
+}
+
+.big-card {
+  width: 100%;
+  height: 483px;
+  background: #FEFFFE;
+  border-radius: 8px;
+}
+
+.mda-welcome {
+  color: #252117;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.date {
+  width: 154px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-text {
+  font-size: 14px;
+  color: #252117
+}
+
+.cr-projects {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #252117;
+}
+
+.cr-projects-graph {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #252117;
+}
+
+.project-numb {
+  .num-big {
+    font-family: Filson Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25.6px;
+    line-height: 35px;
+    color: #252117;
+  }
+  .num-text {
+    font-family: Filson Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;    
+    color: #A0AFBF;
+    
+  }
+}
+
+.num-big-2 {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #252117;
+}
+
+.num-big-3 {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25.6px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.text-survey {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #A0AFBF;
+}
+
+.num-big-gray {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #EDF2F7;
+}
+
+.text-ongoing {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #226AF5;
+
+}
+
+.text-completed {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #02903C;
+}
+
+.text-abandoned {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #C8C8C8;
+}
+
+.cr-divide {
+  background-color: #EDF2F7;
+}

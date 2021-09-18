@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import { sampleReducer } from "./sample";
+import { authReducer } from "./auth";
 
 const appReducer = combineReducers({
-  sample: sampleReducer
+  auth: authReducer
 });
 
 const rootReducer = (state, action) => {
