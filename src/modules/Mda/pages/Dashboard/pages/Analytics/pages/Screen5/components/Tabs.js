@@ -7,7 +7,7 @@ function Tabs() {
       <div className="active" style={{ marginRight: 45 }}>
         Questions
       </div>
-      <div>Answers</div>
+      <div className="inactive">Answers</div>
     </div>
   );
 }
