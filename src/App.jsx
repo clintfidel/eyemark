@@ -9,6 +9,7 @@ import Mda from "modules/Mda";
 import { withTranslation } from "react-i18next";
 import "i18n";
 import PrivateRoute from "routes/privateroute";
+import Questions from "modules/Mda/pages/Dashboard/pages/Analytics/pages/Screen5";
 
 class App extends Component {
   state = {
@@ -37,6 +38,7 @@ class App extends Component {
         <Router history={history}>
           <Switch>
             <Route path="/login" component={Login} />
+            <Route path="/survey-questions" component={Questions} />
             <PrivateRoute path="/mda" component={Mda} />
             <PrivateRoute path="/citizen" component={Citizen} />
             <PrivateRoute path="/contractors" component={Contractors} />

@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 import "./style.css";
-import "./Tabs.js"
+import Tabs from "./Tabs.js";
 
 function Questions() {
-    return (
-        <>
-            <Tabs />
-            
-        </>
-    )
+  return (
+    <>
+      <Tabs />
+    </>
+  );
 }
 
 export default Questions;
