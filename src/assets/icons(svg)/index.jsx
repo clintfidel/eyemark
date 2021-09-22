@@ -103,6 +103,10 @@ import SDGSWater from "./sdgs/water.svg";
 import SDGSEnergy from "./sdgs/energy.svg";
 import Star from "./star.svg";
 import Circle from "./circle.svg";
+import CompletedColor from "./completed-color.svg";
+import AbandonedColor from "./abandoned-color.svg";
+import OngoingColor from "./ongoing-color.svg";
+import Onhold from "./onhold-color.svg";
 import None from "./none.svg";
 import BorderRight from "./border-right.svg";
 
@@ -146,6 +150,10 @@ export {
   SidebarLogoWhite,
   DeactivateAccount,
   ChevronRight,
+  CompletedColor,
+  AbandonedColor,
+  Onhold,
+  OngoingColor,
   PushNotificationIcon,
   EmailNotificationIcon,
   InviteCollaboratorIcon,

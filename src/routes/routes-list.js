@@ -16,6 +16,7 @@ export const dashboardRoutes = {
   categories: "categories",
   notifications: "notifications",
   eyemarked: "eyemarked",
+  analytics: "analytics",
   settings: "settings",
   overview: "overview",
   contractors: "contractors",
@@ -73,4 +74,11 @@ export const createProjectRoutes = {
 export const modulesRoutes = {
   screen1: "create-account",
   screen2: "dashboard"
+};
+
+export const analyticsRoutes = {
+  screen1: "projects",
+  screen2: "citizens",
+  screen3: "contractors",
+  screen4: "Surveys"
 };

@@ -737,4 +737,33 @@
     }
   }  
 
-  
+  .analytics-sub {
+    font-family: Filson Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #989898;
+  }
+
+  .vert-line {
+    height: auto;
+    background-color:#989898;
+    width: 1px;
+  }
+
+  .analytics-sub-cont {
+    height: 20%;
+  }
+  .analytics-sub-cont {
+    .nav-active-analytics {
+      p {
+        font-family: Filson Pro;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #E4AA24;
+      }
+    }
+  }

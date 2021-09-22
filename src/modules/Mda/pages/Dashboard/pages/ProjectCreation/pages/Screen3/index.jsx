@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../../style.scss";
 import "./style.scss";
+import { Switch, Route, useRouteMatch, NavLink, Redirect } from "react-router-dom";
+
 import { AddMore, DeleteIcon } from "assets/icons(svg)";
 
 const Screen3 = () => {
@@ -23,6 +25,30 @@ const Screen3 = () => {
         <div className="sidebar-theory">
           <div className="theory-title-cont">
             <p className="theory-title ml-4">Theory</p>
+          </div>
+          <div className="p-4">
+            <div className="navigation2">
+              <NavLink to="" className="nav" activeClassName="theory-side-active">
+                <p className="py-2 theory-side-text">Impact</p>
+                <hr />
+              </NavLink>
+              <NavLink to="" className="nav" activeClassName="theory-side-active">
+                <p className="py-2 theory-side-text">Outcomes</p>
+                <hr />
+              </NavLink>
+              <NavLink to="" className="nav" activeClassName="theory-side-active">
+                <p className="py-2 theory-side-text">Output</p>
+                <hr />
+              </NavLink>
+              <NavLink to="" className="nav" activeClassName="theory-side-active">
+                <p className="py-2 theory-side-text">Activities</p>
+                <hr />
+              </NavLink>
+              <NavLink to="" className="nav" activeClassName="theory-side-active">
+                <p className="py-2 theory-side-text">Input</p>
+                <hr />
+              </NavLink>
+            </div>
           </div>
         </div>
         <div className="main-theory">

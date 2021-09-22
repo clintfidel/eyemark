@@ -2,7 +2,7 @@ import React, { Suspense, useState } from "react";
 import { Switch, Route, useRouteMatch, NavLink, Redirect } from "react-router-dom";
 import { Loading } from "components";
 import BackDrop from "./backdrop";
-import { dashboardRoutes } from "routes/routes-list";
+import { dashboardRoutes, analyticsRoutes } from "routes/routes-list";
 import {
   SidebarLogoWhite,
   MoreIconBlack,
@@ -22,7 +22,7 @@ const Projects = React.lazy(() => import("./pages/Projects"));
 const Project = React.lazy(() => import("./pages/Project"));
 const Contractors = React.lazy(() => import("./pages/Contractors"));
 const Overview = React.lazy(() => import("./pages/Overview"));
-const Categories = React.lazy(() => import("./pages/Categories"));
+const Analytics = React.lazy(() => import("./pages/Analytics"));
 const ProjectCreation = React.lazy(() => import("./pages/ProjectCreation"));
 const Settings = React.lazy(() => import("./pages/Settings"));
 import "./style.scss";
@@ -77,11 +77,44 @@ const Sidebar = ({ show }) => {
           <img src={NotificationIcon} />
           <p>Notifications</p>
         </NavLink>
-        <NavLink to={`${url}/${dashboardRoutes.eyemarked}`} className="nav-mda" activeClassName="nav-active-mda">
+        <NavLink to={`${url}/${dashboardRoutes.analytics}`} className="nav-mda" activeClassName="nav-active-mda">
           <img src={EyemarkedIcon} />
-          <p>Eyemarked</p>
+          <p>Analytics</p>
         </NavLink>
-        <NavLink to={`${url}/${dashboardRoutes.profile}`} className="nav-mda" activeClassName="nav-active">
+        <div className="flex ml-6 analytics-sub-cont">
+          <div className="mx-4 vert-line" />
+          <div>
+            <NavLink
+              className=""
+              activeClassName="nav-active-analytics"
+              to={`${url}/${dashboardRoutes.analytics}/${analyticsRoutes.screen1}`}
+            >
+              <p className="analytics-sub mb-3">Projects</p>
+            </NavLink>
+            <NavLink
+              className=""
+              activeClassName="nav-active-analytics"
+              to={`${url}/${dashboardRoutes.analytics}/${analyticsRoutes.screen2}`}
+            >
+              <p className="analytics-sub mb-3">Citizens</p>
+            </NavLink>
+            <NavLink
+              className=""
+              activeClassName="nav-active-analytics"
+              to={`${url}/${dashboardRoutes.analytics}/${analyticsRoutes.screen3}`}
+            >
+              <p className="analytics-sub mb-3">Contractors</p>
+            </NavLink>
+            <NavLink
+              className=""
+              activeClassName="nav-active-analytics"
+              to={`${url}/${dashboardRoutes.analytics}/${analyticsRoutes.screen4}`}
+            >
+              <p className="analytics-sub mb-1">Surveys</p>
+            </NavLink>
+          </div>
+        </div>
+        <NavLink to={`${url}/${dashboardRoutes.profile}`} className="nav-mda mt-5" activeClassName="nav-active">
           <img src={ProfileIcon} />
           <p>Profile</p>
         </NavLink>
@@ -263,7 +296,7 @@ const Dashboard = () => {
             <Route path={`${path}/${dashboardRoutes.projects}`} render={props => <Projects {...props} />} />
             <Route path={`${path}/${dashboardRoutes.single}`} render={props => <Project {...props} />} />
             <Route path={`${path}/${dashboardRoutes.profile}`} render={props => <Profile {...props} />} />
-            <Route path={`${path}/${dashboardRoutes.categories}`} render={props => <Categories {...props} />} />
+            <Route path={`${path}/${dashboardRoutes.analytics}`} render={props => <Analytics {...props} />} />
             <Route path={`${path}/${dashboardRoutes.createproject}`} render={props => <ProjectCreation {...props} />} />
             <Route path={`${path}/${dashboardRoutes.settings}`} render={props => <Settings {...props} />} />
             <Redirect to={`${path}/${dashboardRoutes.overview}`} />
