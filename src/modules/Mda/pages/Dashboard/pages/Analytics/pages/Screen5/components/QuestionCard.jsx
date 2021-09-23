@@ -6,6 +6,7 @@ import { ReactComponent as ImageIcon } from "../assets/image-icon.svg";
 import { ReactComponent as Arrow } from "../assets/arrow.svg";
 import "../style.css";
 import OptionField from "./OptionField";
+import CardFooter from "./CardFooter";
 
 const QuestionCard = () => {
   return (
@@ -29,6 +30,7 @@ const QuestionCard = () => {
         </div>
       </div>
       <OptionField />
+      <CardFooter />
     </div>
   );
 };
