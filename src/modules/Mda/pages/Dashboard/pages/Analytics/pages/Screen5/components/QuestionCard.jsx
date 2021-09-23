@@ -1,4 +1,3 @@
-import { StylesContext } from "@material-ui/styles";
 import React from "react";
 import { ReactComponent as Drag } from "../assets/drag.svg";
 import { SIZES } from "../constants";
@@ -29,7 +28,8 @@ const QuestionCard = () => {
           <Arrow style={{ marginTop: 7 }} />
         </div>
       </div>
-      <OptionField fieldDisplay="rating-scale" />
+      {/* fieldDisplay can be: multiple, rating-scale, dropdown, open-ended, file-upload, likert-scale */}
+      <OptionField fieldDisplay="open-ended" />
       <CardFooter />
     </div>
   );
