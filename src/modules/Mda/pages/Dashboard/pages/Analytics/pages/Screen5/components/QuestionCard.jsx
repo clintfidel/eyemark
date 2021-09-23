@@ -29,7 +29,7 @@ const QuestionCard = () => {
           <Arrow style={{ marginTop: 7 }} />
         </div>
       </div>
-      <OptionField />
+      <OptionField fieldDisplay="rating-scale" />
       <CardFooter />
     </div>
   );
