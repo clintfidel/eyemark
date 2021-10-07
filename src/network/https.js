@@ -22,6 +22,7 @@ const privateInstance = axios.create({
 privateInstance.interceptors.request.use(
   config => {
     const token = localStorage.getItem("token");
+
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
       config.onUploadProgress = progressEvent => {
@@ -44,6 +45,6 @@ export const publicRequest = ({ method = "get", route, payload, responseType = "
   publicInstance.defaults.responseType = responseType;
   const requestMethod = method.toLowerCase();
   return publicInstance[requestMethod](route, payload).catch(error =>
-    Promise.reject(error.response ? error.response.data : error.message)
+    Promise.reject(error.response ? error.response : error.message)
   );
 };

@@ -1,9 +1,7 @@
 .settings-account {
-  width: 100%;
   background-color: #ebebeb;
   min-height: 100vh;
   .navigation {
-    width: 100%;
     height: 64px;
     background-color: #fff;
     padding: 0 79px;
@@ -22,7 +20,6 @@
 }
 
 .settings-account-modal {
-  width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.3);
   position: fixed;

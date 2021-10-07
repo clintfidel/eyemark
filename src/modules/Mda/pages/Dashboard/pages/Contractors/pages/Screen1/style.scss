@@ -3,13 +3,12 @@
 }
 
 .nav-content {
-  width: 100%;
+  @apply overflow-x-auto lg:overflow-hidden;
   box-sizing: border-box;
-  overflow: hidden;
   table {
-    width: 100%;
+    @apply table-auto sm:w-full;
     thead {
-      width: 100%;
+      @apply sm:w-full;
       height: 50px;
       td {
         font-style: normal;
@@ -20,7 +19,7 @@
       }
     }
     tbody {
-      width: 100%;
+      @apply sm:w-full;
       tr {
         height: 60px;
         cursor: pointer;
@@ -35,8 +34,8 @@
           span {
             width: 83px;
             height: 25px;
-            background: #F8F6E6;
-            border: 0.5px solid #E4AA24;
+            background: #f8f6e6;
+            border: 0.5px solid #e4aa24;
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -46,7 +45,7 @@
             font-size: 12.8px;
             line-height: 15px;
             text-align: center;
-            color: #E4AA24;
+            color: #e4aa24;
           }
           .completed {
             background: #e3ffe4;

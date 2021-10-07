@@ -10,6 +10,8 @@ const Screen2 = React.lazy(() => import("./pages/Screen2"));
 const Screen3 = React.lazy(() => import("./pages/Screen3"));
 const Screen4 = React.lazy(() => import("./pages/Screen4"));
 const Screen5 = React.lazy(() => import("./pages/Screen5"));
+const Screen6 = React.lazy(() => import("./pages/Screen6"));
+
 import "./style.scss";
 
 const Project = () => {
@@ -47,8 +49,8 @@ const Project = () => {
               <NavLink to={`${url}/${projectRoutes.screen5}`} className="nav" activeClassName="nav-active">
                 <p>Reviews</p>
               </NavLink>
-              <NavLink to="/surveys" onClick={e => e.preventDefault()} className="nav" activeClassName="nav-active">
-                <p>Surveys</p>
+              <NavLink to={`${url}/${projectRoutes.screen6}`} className="nav" activeClassName="nav-active">
+                <p>Survey</p>
               </NavLink>
             </div>
           </div>
@@ -59,6 +61,7 @@ const Project = () => {
             <Route path={`${path}/${projectRoutes.screen3}`} render={props => <Screen3 {...props} />} />
             <Route path={`${path}/${projectRoutes.screen4}`} render={props => <Screen4 {...props} />} />
             <Route path={`${path}/${projectRoutes.screen5}`} render={props => <Screen5 {...props} />} />
+            <Route path={`${path}/${projectRoutes.screen6}`} render={props => <Screen6 {...props} />} />
             <Redirect to={`${path}/${projectRoutes.screen1}`} />
           </Switch>
         </div>

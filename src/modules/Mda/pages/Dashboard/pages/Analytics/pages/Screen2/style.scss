@@ -1,78 +1,73 @@
 .date {
-    width: 154px;
-    height: 40px;
-    background: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .date-text {
-    font-size: 14px;
-    color: #252117
-  }
+  width: 154px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .mda-welcome {
-    color: #252117;
-    font-size: 16px;
-    font-weight: bold;
-  }
+.date-text {
+  font-size: 14px;
+  color: #252117;
+}
 
-  .select-container {
-    width: 30%;
-    height: 54px;
-    position: relative;
-    border: 1px solid #a0afbf;
-    padding: 8px 17px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    background-color: #fff;
-    input {
-      padding: none !important;
-    }
-  }
+.mda-welcome {
+  color: #252117;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-  .ph {
-    padding: 0 30px !important;
+.select-container {
+  width: 30%;
+  height: 54px;
+  position: relative;
+  border: 1px solid #a0afbf;
+  padding: 8px 17px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  input {
+    padding: none !important;
   }
-  
-  .nav-content {
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-    table {
-      width: 100%;
-      thead {
-        width: 100%;
-        height: 50px;
-        td {
-          font-style: normal;
-          font-weight: bold;
-          font-size: 12px;
-          line-height: 16px;
-          color: #000000;
-        }
+}
+
+.ph {
+  padding: 0 30px !important;
+}
+
+.nav-content {
+  box-sizing: border-box;
+  overflow: hidden;
+  table {
+    thead {
+      height: 50px;
+      td {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
       }
-      tbody {
-        width: 100%;
-        tr {
-          height: 60px;
-          cursor: pointer;
-          td {
-            p {
-              font-style: normal;
-              font-weight: 500;
-              font-size: 12px;
-              line-height: 17px;
-              color: #000000;
-            }
+    }
+    tbody {
+      tr {
+        height: 60px;
+        cursor: pointer;
+        td {
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            color: #000000;
           }
         }
-        .row-active {
-          background: #fefdf8;
-        }
+      }
+      .row-active {
+        background: #fefdf8;
       }
     }
   }
-  
+}

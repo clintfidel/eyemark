@@ -10,7 +10,6 @@ const Screen2 = React.lazy(() => import("./pages/Screen2"));
 const Screen3 = React.lazy(() => import("./pages/Screen3"));
 const Screen4 = React.lazy(() => import("./pages/Screen4"));
 const Screen5 = React.lazy(() => import("./pages/Screen5"));
-const Screen6 = React.lazy(() => import("./pages/Screen6"));
 
 import "./style.scss";
 
@@ -44,9 +43,6 @@ const Profile = () => {
               <NavLink to={`${url}/${profileRoutes.screen5}`} className="nav" activeClassName="nav-active">
                 <p>Following</p>
               </NavLink>
-              <NavLink to={`${url}/${profileRoutes.screen6}`} className="nav" activeClassName="nav-active">
-                <p>Survey</p>
-              </NavLink>
             </div>
           </div>
           <div className="border-divider" />
@@ -56,7 +52,6 @@ const Profile = () => {
             <Route path={`${path}/${profileRoutes.screen3}`} render={props => <Screen3 {...props} />} />
             <Route path={`${path}/${profileRoutes.screen4}`} render={props => <Screen4 {...props} />} />
             <Route path={`${path}/${profileRoutes.screen5}`} render={props => <Screen5 {...props} />} />
-            <Route path={`${path}/${profileRoutes.screen6}`} render={props => <Screen6 {...props} />} />
             <Redirect to={`${path}/${profileRoutes.screen1}`} />
           </Switch>
         </div>

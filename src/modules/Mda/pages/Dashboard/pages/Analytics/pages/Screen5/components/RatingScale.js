@@ -27,7 +27,7 @@ const RatingScale = () => {
           <div style={{ width: 37, borderRight: "1px solid #A0AFBF" }}>
             <div style={{ paddingTop: 18 }}>1</div>
           </div>
-          <input placeholder="Label (Optional)" />
+          <input className="pl-5" placeholder="Label (Optional)" />
         </div>
       </div>
     </>

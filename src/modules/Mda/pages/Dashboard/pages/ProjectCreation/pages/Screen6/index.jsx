@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { createProjectRoutes, dashboardRoutes } from "routes/routes-list";
 import "../../style.scss";
 import { Input } from "components";
 
@@ -19,7 +21,7 @@ const Screen6 = () => {
         </div>
       </div>
       <div className="form-control-l mt-12">
-        <div className="flex justify-between">
+        <div className="flex flex-wrap sm:flex-nowrap justify-between sm:space-x-4">
           <Input className="input-invite-l" placeholder="Amount mobilized" />
           <Input className="input-invite-l" placeholder="Amount Released" />
           <Input className="input-invite-l" placeholder="Amount Utilized" />
@@ -28,9 +30,12 @@ const Screen6 = () => {
       <div className="mt-20">
         <hr className="" />
         <div className="flex justify-between my-3">
-          <div className="previous-project">
+          <NavLink
+            className="previous-project"
+            to={`/mda/dashboard/${dashboardRoutes.createproject}/${createProjectRoutes.screen5}`}
+          >
             <p className="previous-text">Back</p>
-          </div>
+          </NavLink>
           <div />
         </div>
         <hr className="mt-3" />

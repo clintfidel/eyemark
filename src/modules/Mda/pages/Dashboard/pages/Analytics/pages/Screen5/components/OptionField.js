@@ -7,16 +7,16 @@ import OpenEnded from "./OpenEnded";
 const OptionField = ({ fieldDisplay }) => {
   const field = () => {
     switch (fieldDisplay) {
-      case "multiple":
+      case "Multiple choice":
         return <MultipleChoice />;
-      case "rating-scale":
+      case "Rating scale":
         return <RatingScale />;
-      case "dropdown":
+      case "Dropdown":
         return <Dropdown />;
-      case "open-ended":
+      case "Open-ended":
         return <OpenEnded />;
     }
   };
-  return field(fieldDisplay);
+  return field();
 };
 export default OptionField;

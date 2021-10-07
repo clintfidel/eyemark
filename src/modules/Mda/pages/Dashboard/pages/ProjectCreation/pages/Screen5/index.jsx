@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { createProjectRoutes, dashboardRoutes } from "routes/routes-list";
 import "./style.scss";
 import "../../style.scss";
 import { AddMore, DeleteIcon } from "assets/icons(svg)";
@@ -42,7 +44,7 @@ const Screen5 = () => {
       <div className="flex mt-10 location-sec-2">
         <div className="location-count-cont">
           <p className="location-no">2</p>
-          <p className="location-title-text pt-5">ADDED LOCATION(S)</p>
+          <p className="location-title-text mt-3">ADDED LOCATION(S)</p>
         </div>
         <div className="ml-4">
           <p className="p-location">Project Location(s)</p>
@@ -72,19 +74,19 @@ const Screen5 = () => {
             aliquam vulputate nisl etiam dignissim sagittis. Pellentesque netus pretium tortor libero, leo, non tellus.
             Fringilla viverra amet tincidunt libero cursus arcu.
           </p>
-          <div className="flex m-status-date justify-between mt-20">
-            <div className="flex justify-between  m-status-date-deet">
-              <div className="m-status w-28">
-                <p className="m-status-text">Completed</p>
-                <p className="m-status-tit pt-3">Status</p>
+          <div className="flex flex-wrap m-status-date justify-between mt-20">
+            <div className="flex justify-between m-status-date-deet">
+              <div className="m-status w-4/12">
+                <p className="m-status-text text-xs sm:text-sm">Completed</p>
+                <p className="m-status-tit pt-3 text-xs sm:text-sm">Status</p>
               </div>
-              <div className="m-enddate w-36 mr-4">
-                <p className="m-date-text">29th May 2021</p>
-                <p className="m-date-tit pt-3">expected start date</p>
+              <div className="m-enddate w-4/12">
+                <p className="m-date-text text-xs sm:text-sm">29th May 2021</p>
+                <p className="m-date-tit pt-3 text-xs sm:text-sm">expected start date</p>
               </div>
-              <div className="m-startdate">
-                <p className="m-date-text">29th July 2021</p>
-                <p className="m-date-tit pt-3">expected end date</p>
+              <div className="m-startdate w-4/12">
+                <p className="m-date-text text-xs sm:text-sm">29th July 2021</p>
+                <p className="m-date-tit pt-3 text-xs sm:text-sm">expected end date</p>
               </div>
             </div>
             <img src={DeleteIcon} />
@@ -94,12 +96,18 @@ const Screen5 = () => {
       <div className="mt-56">
         <hr className="" />
         <div className="flex justify-between my-3">
-          <div className="previous-project">
+          <NavLink
+            className="previous-project"
+            to={`/mda/dashboard/${dashboardRoutes.createproject}/${createProjectRoutes.screen4}`}
+          >
             <p className="previous-text">Back</p>
-          </div>
-          <div className="next-project py-4">
+          </NavLink>
+          <NavLink
+            className="next-project py-4"
+            to={`/mda/dashboard/${dashboardRoutes.createproject}/${createProjectRoutes.screen6}`}
+          >
             <p className="next-text ">Next</p>
-          </div>
+          </NavLink>
         </div>
         <hr className="mt-3" />
       </div>

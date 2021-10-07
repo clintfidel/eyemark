@@ -267,7 +267,7 @@ const Dashboard = () => {
               render={props => <Home {...{ props, leftDrawerToggleClickHandler, link }} />}
             />
             <Route path={`${path}/${dashboardRoutes.projects}`} render={props => <Projects {...props} />} />
-            <Route path={`${path}/${dashboardRoutes.project}`} render={props => <Project {...props} />} />
+            <Route path={`${path}/${dashboardRoutes.single}`} render={props => <Project {...props} />} />
             <Route path={`${path}/${dashboardRoutes.profile}`} render={props => <Profile {...props} />} />
             <Route path={`${path}/${dashboardRoutes.categories}`} render={props => <Categories {...props} />} />
             <Route path={`${path}/${dashboardRoutes.settings}`} render={props => <Settings {...props} />} />

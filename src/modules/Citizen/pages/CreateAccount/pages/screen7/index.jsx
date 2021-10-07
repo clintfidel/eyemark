@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LogoSmall } from "assets/icons(svg)";
 import { Background2 } from "assets/images(png)";
 import { Helmet } from "react-helmet";
@@ -6,9 +6,14 @@ import { Button, Tabs } from "components";
 import { useTranslation } from "react-i18next";
 import { createAccountRoutes, loginRoutes, modulesRoutes } from "routes/routes-list";
 import "./style.scss";
+import { getFollowSuggestions } from "network/api";
+
 export function Screen7({ history }) {
   const { t } = useTranslation();
   const [tabClicked, setTabClicked] = useState(false);
+  const [followSuggestions, setFollowSuggestions] = useState(null);
+  const [projectSuggestions, setProjectSuggestions] = useState(null);
+
   return (
     <>
       <Helmet>

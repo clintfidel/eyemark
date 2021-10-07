@@ -1,21 +1,20 @@
 .theory-cont {
-  width: 100%;
+  @apply overflow-x-auto;
 }
 
 .sidebar-theory {
-  width: 25%;
-  height: 500px;
-  border-right: 2px solid #DCDCDC;
-  background: #EBEBEB;
+  @apply flex-shrink-0 w-6/12 sm:w-3/12;
+  border-right: 2px solid #dcdcdc;
+  background: #ebebeb;
   border-radius: 8px 0px 0px 0px;
 }
 
 .theory-title-cont {
-  width: 100%;
+  // @apply;
   height: 72px;
   display: flex;
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .theory-title {
@@ -37,15 +36,21 @@
 }
 
 .main-theory {
-  background: #EBEBEB;
-  width: 75%;
-  height: 500px;
+  @apply w-full flex-shrink-0 sm:w-9/12;
+  background: #ebebeb;
   border-radius: 0px 8px 0px 0px;
 }
 
-.main-theory-header {
-  width: 100%;
+.accordion-text {
+  @apply text-sm sm:text-base w-8/12;
 }
+
+.acc-subpoint {
+  @apply text-xs font-semibold sm:text-sm;
+}
+
+// .main-theory-header {
+// }
 
 .theory-title-2 {
   font-family: Filson Pro;
@@ -57,13 +62,11 @@
 }
 
 .main-theory-header1 {
-  width: 20%;
   display: flex;
   align-items: center;
 }
 
 .main-theory-header2 {
-  width: 24%;
   display: flex;
   align-items: center;
 }
@@ -73,13 +76,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FFFFFF;
-  border: 1px solid #A0AFBF;
+  background: #ffffff;
+  border: 1px solid #a0afbf;
   box-sizing: border-box;
   border-radius: 4px;
 }
 
 .point-btn-text {
+  @apply text-sm sm:text-base;
   font-family: Filson Pro;
   font-style: normal;
   font-weight: 500;

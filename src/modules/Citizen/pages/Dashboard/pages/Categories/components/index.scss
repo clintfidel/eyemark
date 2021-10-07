@@ -1,66 +1,63 @@
 .sort-items {
-    width: 100% !important;
-    overflow-x: scroll;
-    margin-left: 30px;
+  overflow-x: scroll;
+  margin-left: 30px;
 }
 
 @media screen and (max-width: 788px) {
-    .content {
-        padding: 0px 10px !important;
-    }
-    .image {
-        display: none !important;
-    }
-    .text {
-        width: 100% !important;
-        padding: 25px 40px
-    }
-    .insights {
-        // display: block !important;
-        justify-content: space-between !important;
-    }
-    .insights3 {
-        display: block !important;
-    }
-    .card3 {
-        justify-content: space-between !important;
-    }
-    .insight {
-        margin-right: 0px !important;
-        margin-top: 5px !important;
-        margin-bottom: 5px !important;
-        justify-content: space-between !important;
-    }
-    .categories-container .content .cat-card-01 {
-        height: 100% !important;
-    }
+  .content {
+    padding: 0px 10px !important;
+  }
+  .image {
+    display: none !important;
+  }
+  .text {
+    padding: 25px 40px;
+  }
+  .insights {
+    // display: block !important;
+    justify-content: space-between !important;
+  }
+  .insights3 {
+    display: block !important;
+  }
+  .card3 {
+    justify-content: space-between !important;
+  }
+  .insight {
+    margin-right: 0px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    justify-content: space-between !important;
+  }
+  .categories-container .content .cat-card-01 {
+    height: 100% !important;
+  }
 }
 
 @media screen and (max-width: 455px) {
-    .image {
-        display: none !important;
-    }
-    .text {
-        width: 100% !important;
-        padding: 25px 6px !important;
-    }
-    .insights {
-        // display: block !important;
-        justify-content: space-between !important;
-    }
-    .insights3 {
-        display: block !important;
-    }
-    .card3 {
-        justify-content: space-between !important;
-    }
-    .insight {
-        margin-right: 0px !important;
-        margin-top: 5px !important;
-        margin-bottom: 5px !important;
-        justify-content: space-between !important;
-    }
-    .categories-container .content .cat-card-01 {
-        height: 100% !important;
-    }
+  .image {
+    display: none !important;
+  }
+  .text {
+    padding: 25px 6px !important;
+  }
+  .insights {
+    // display: block !important;
+    justify-content: space-between !important;
+  }
+  .insights3 {
+    display: block !important;
+  }
+  .card3 {
+    justify-content: space-between !important;
+  }
+  .insight {
+    margin-right: 0px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    justify-content: space-between !important;
+  }
+  .categories-container .content .cat-card-01 {
+    height: 100% !important;
+  }
 }

@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import ReactTooltip from "react-tooltip";
 import "./style.scss";
 
-export default function Tags({ title, spacing, img1, data = [], img2, className, isTouched }) {
+export default function Tags({ title, spacing, img1, data = [], img2, className, isTouched, setSelectedItems }) {
   const [checkedItems, setCheckedItems] = useState([]);
 
   const onCheckItems = id => {
     setCheckedItems([...checkedItems, id]);
+
+    if (setSelectedItems) setSelectedItems([...checkedItems, id]);
   };
 
   const removeCheckedItems = id => {
@@ -14,6 +16,7 @@ export default function Tags({ title, spacing, img1, data = [], img2, className,
     if (indexId > -1) {
       checkedItems.splice(indexId, 1);
       setCheckedItems([...checkedItems]);
+      if (setSelectedItems) setSelectedItems([...checkedItems]);
     }
     if (checkedItems.length === 0) {
       isTouched(false);
@@ -51,9 +54,9 @@ export default function Tags({ title, spacing, img1, data = [], img2, className,
         {data.map((name, index) => (
           <button
             key={index}
-            onClick={() => toggleChecked(name)}
-            className={`text-base tags text-center text-white font-medium 
-            ${checkedItems.includes(name) ? "clicked" : "tags"}`}
+            onClick={() => toggleChecked(name.name)}
+            className={`text-sm tags text-center text-white font-medium 
+            ${checkedItems.includes(name.name) ? "clicked" : "tags"}`}
           >
             {name.name}
           </button>

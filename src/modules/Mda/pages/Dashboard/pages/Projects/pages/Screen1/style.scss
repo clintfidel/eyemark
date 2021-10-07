@@ -3,13 +3,12 @@
 }
 
 .nav-content {
-  width: 100%;
+  @apply overflow-x-auto lg:overflow-hidden;
   box-sizing: border-box;
-  overflow: hidden;
   table {
-    width: 100%;
+    @apply w-full table-auto;
     thead {
-      width: 100%;
+      @apply w-full px-3;
       height: 50px;
       td {
         font-style: normal;
@@ -20,8 +19,8 @@
       }
     }
     tbody {
-      width: 100%;
       tr {
+        @apply flex items-center justify-between px-3;
         height: 60px;
         cursor: pointer;
         td {
@@ -55,9 +54,9 @@
           }
         }
       }
-      .row-active {
-        background: #fefdf8;
-      }
     }
+  }
+  .row-active {
+    background: #fefdf8;
   }
 }

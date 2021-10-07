@@ -2,6 +2,7 @@ import { ProjectsIcon } from "assets/icons(svg)";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 import "./style.scss";
 
 export function Screen1() {
@@ -50,7 +51,9 @@ export function Screen1() {
                     <p>783</p>
                   </td>
                   <td>
-                    <span className="a-s-btn p-4">View</span>
+                    <NavLink className="" to="/mda/dashboard/analytics/survey-questions">
+                      <span className="a-s-btn p-4">View</span>
+                    </NavLink>
                   </td>
                 </tr>
               );

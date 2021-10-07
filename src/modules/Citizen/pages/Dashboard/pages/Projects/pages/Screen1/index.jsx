@@ -27,7 +27,7 @@ export function Screen1({ history }) {
             {[1, 2, 3, 4, 5].map((t, index) => {
               return (
                 <tr
-                  onClick={() => history.push(`/citizen/dashboard/project/overview`)}
+                  onClick={() => history.push(`/citizen/dashboard/single/overview`)}
                   key={index}
                   className={index % 2 === 0 ? "row-active" : "row"}
                 >

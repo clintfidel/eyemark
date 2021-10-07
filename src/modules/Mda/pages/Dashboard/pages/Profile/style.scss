@@ -1,6 +1,5 @@
 .profile-container {
   .navigation1 {
-    width: 100%;
     height: 64px;
     background-color: #ffffff;
     padding: 0 30px;
@@ -11,7 +10,6 @@
     }
   }
   .navigation2 {
-    width: 100%;
     height: 96px;
     position: relative;
     display: flex;
@@ -49,31 +47,25 @@
     border-bottom: 1px solid #d5d8db;
     margin-bottom: 50px;
     margin-left: 2.8%;
-    margin-right:2.8%;
+    margin-right: 2.8%;
   }
   .content {
-    width: 100%;
     padding: 0 7%;
-
   }
 }
 
 @media screen and (max-width: 1024px) {
   .profile-container .content {
-    width: 100%;
     padding: 0 5% !important;
   }
 }
 
 @media screen and (max-width: 788px) {
-  .profile-container
-  .content {
-    width: 100%;
+  .profile-container .content {
     padding: 0 2% !important;
   }
   .nav-contents {
     overflow-x: scroll;
-    width: 100% !important;
   }
   .navigation2 {
     position: relative;
@@ -84,10 +76,9 @@
     border-bottom: 1px solid #d5d8db;
     margin-bottom: 5px;
     margin-left: 2.8%;
-    margin-right:2.8%;
+    margin-right: 2.8%;
   }
   .profile-posts {
-    width: 100%;
     padding: 0 4px !important;
     box-sizing: border-box !important;
   }

@@ -1,6 +1,5 @@
 .projects-container {
   .navigation1 {
-    width: 100%;
     height: 64px;
     background-color: #ffffff;
     padding: 0 30px;
@@ -11,7 +10,6 @@
     }
   }
   .content {
-    width: 100%;
     padding: 2%;
   }
 }
@@ -33,8 +31,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFF;
-  border: 1px solid #EDF2F7;
+  background: #fff;
+  border: 1px solid #edf2f7;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -46,7 +44,7 @@
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .invite-text-s {
@@ -60,14 +58,11 @@
 }
 
 .project-sec-header {
-  align-items: center;
+  @apply mt-4 items-center;
 }
 
 .circular-progress {
-  background: #FFFFFF;
-  border-radius: 46px;
-  width: 60px;
-  height: 60px;
+  @apply w-16 sm:w-12 h-8 sm:h-12 rounded-full bg-white;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -90,7 +85,6 @@
   font-size: 14px;
   line-height: 19px;
   color: #252117;
-
 }
 
 .project-sec {
@@ -99,18 +93,16 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 17px;
-  color: #C8C8C8;
-
+  color: #c8c8c8;
 }
 
 .info-cont {
-  width: 100%;
   justify-content: space-between;
 }
 
 .info-image-cont {
+  @apply w-full sm:w-4/12;
   height: 314px;
-  width: 30%;
   background-color: rgb(221, 218, 218);
   display: flex;
   align-items: flex-end;
@@ -120,12 +112,11 @@
 }
 
 .form-cont {
-  width: 65%;
+  @apply w-full sm:w-3/5 mt-5 sm:mt-0;
   .input-container {
     .MuiInputBase-input {
       font: inherit;
       color: currentColor;
-      width: 100%;
       border: 0;
       height: 1.1876em;
       margin: 0;
@@ -143,7 +134,7 @@
 }
 .form-control-l {
   .input-container {
-    width: 32%;
+    @apply w-full sm:w-1/3;
     height: 54px;
     position: relative;
     border: 1px solid #a0afbf;
@@ -151,22 +142,21 @@
     box-sizing: border-box;
     border-radius: 4px;
     background-color: #fff;
-      .MuiInputBase-input {
-        font: inherit;
-        color: currentColor;
-        width: 100%;
-        border: 0;
-        height: 1.1876em;
-        margin: 0;
-        display: block;
-        padding: 12px 12px;
-        min-width: 0;
-        background: none;
-        box-sizing: content-box;
-        animation-name: mui-auto-fill-cancel;
-        letter-spacing: inherit;
-        animation-duration: 10ms;
-        -webkit-tap-highlight-color: transparent;
+    .MuiInputBase-input {
+      font: inherit;
+      color: currentColor;
+      border: 0;
+      height: 1.1876em;
+      margin: 0;
+      display: block;
+      padding: 12px 12px;
+      min-width: 0;
+      background: none;
+      box-sizing: content-box;
+      animation-name: mui-auto-fill-cancel;
+      letter-spacing: inherit;
+      animation-duration: 10ms;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
@@ -181,28 +171,27 @@
     box-sizing: border-box;
     border-radius: 4px;
     background-color: #fff;
-      .MuiInputBase-input {
-        font: inherit;
-        color: currentColor;
-        width: 100%;
-        border: 0;
-        height: 1.1876em;
-        margin: 0;
-        display: block;
-        padding: 12px 12px;
-        min-width: 0;
-        background: none;
-        box-sizing: content-box;
-        animation-name: mui-auto-fill-cancel;
-        letter-spacing: inherit;
-        animation-duration: 10ms;
-        -webkit-tap-highlight-color: transparent;
+    .MuiInputBase-input {
+      font: inherit;
+      color: currentColor;
+      border: 0;
+      height: 1.1876em;
+      margin: 0;
+      display: block;
+      padding: 12px 12px;
+      min-width: 0;
+      background: none;
+      box-sizing: content-box;
+      animation-name: mui-auto-fill-cancel;
+      letter-spacing: inherit;
+      animation-duration: 10ms;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
 
 .text-area-project {
-  width: 49%;
+  @apply w-full sm:w-49 mt-12 sm:mt-0;
   height: 367px;
 }
 
@@ -216,22 +205,22 @@
 }
 
 .p-text-area {
-  background: #FFFFFF;
+  background: #ffffff;
   height: 367px;
 }
 
 .text-area-tag {
-  background: #FFFFFF;
+  background: #ffffff;
   height: 367px;
-  border: 1px solid #A0AFBF;
+  border: 1px solid #a0afbf;
   box-sizing: border-box;
   border-radius: 8px;
 }
 
 .next-project {
-  background: #E4AA24;
+  @apply px-4;
+  background: #e4aa24;
   border-radius: 20px;
-  width: 6%;
   height: 28px;
   display: flex;
   justify-content: center;
@@ -246,13 +235,11 @@
   line-height: 22px;
   text-align: right;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .location-count-cont {
-  height: 86px;
-  width: auto;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
   padding: 12px;
 }
@@ -272,7 +259,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #A0AFBF;
+  color: #a0afbf;
 }
 
 .p-location {
@@ -298,12 +285,12 @@
 }
 
 .previous-project {
-  background: #FFFFFF;
-  border: 1px solid #EDF2F7;
+  @apply px-4;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
   box-sizing: border-box;
   border-radius: 20px;
   height: 38px;
-  width: 7%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,14 +308,14 @@
 }
 
 .divider-more {
-  width: 98%
+  width: 98%;
 }
 
 .add-more-icon {
-  width: 2%;
+  @apply w-8;
 }
 .add-more-icon-s4 {
-  width: 4%;
+  @apply w-8;
 }
 
 .add-more-text {
@@ -341,8 +328,7 @@
 }
 
 .rmIcon {
-  display: flex;
-  margin-left: 99%;
+  @apply flex justify-end mb-2;
 }
 
 .title-milestone {
@@ -355,17 +341,15 @@
 }
 
 .milestone-cont {
-  width: 100%;
   // height: 278px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
 
 .m-edit-btn {
-  background: #FFFFFF;
-  border: 1px solid #EDF2F7;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
   border-radius: 4px;
-  width: 4%;
   display: flex;
   justify-content: center;
 }
@@ -378,7 +362,7 @@
   line-height: 17px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #E4AA24;
+  color: #e4aa24;
 }
 
 .m-description {
@@ -394,26 +378,23 @@
   font-family: Filson Pro;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 22px;
-  color: #02903C;
+  color: #02903c;
 }
 
 .m-status-tit {
   font-family: Filson Pro;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #A0AFBF;
+  color: #a0afbf;
 }
 
 .m-date-text {
   font-family: Filson Pro;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 22px;
   color: #252117;
 }
@@ -422,18 +403,16 @@
   font-family: Filson Pro;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #A0AFBF;
+  color: #a0afbf;
 }
 
-.m-status-date {
-  width: 100%;
-}
+// .m-status-date {
+// }
 
 .m-status-date-deet {
-  width: auto;
+  @apply sm:w-10/12 lg:w-7/12;
 }
 
 .MuiInput-underline:before {
@@ -443,18 +422,22 @@
   content: "\00a0";
   position: absolute;
   transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-bottom: none !important; 
+  border-bottom: none !important;
   pointer-events: none;
 }
 
-.s4-cont {
-  width: 100%;
-}
+// .s4-cont {
+// }
 
 .s4-sec1 {
-  width: 47%;
+  @apply w-full sm:w-5/12;
 }
 
-.theory-cont {
-  
+.p-tag-text {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #252117;
 }

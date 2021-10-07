@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/modules/Dashboard/pages/Categories/pages/Screen1/style.scss"],"names":[],"mappings":"AAAA,oBACE,cAAe,CACf,eAAgB","file":"27.a266fb3f.chunk.css","sourcesContent":[".screen1-categories {\n  padding: 0 30px;\n  margin-top: 50px;\n}\n"]}

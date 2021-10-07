@@ -15,6 +15,12 @@ import DeleteIcon from "./deleteIcon.svg";
 import QuickActions from "./quickActions.svg";
 import LogoBlack from "./logo-black.svg";
 import Eye from "./eye.svg";
+import Emoji1 from "./emoji1.svg";
+import Emoji2 from "./emoji2.svg";
+import Emoji3 from "./emoji3.svg";
+import Emoji4 from "./emoji4.svg";
+import Emoji5 from "./emoji5.svg";
+import Bookmark from "./bookmark.svg";
 import Pointer from "./pointer.svg";
 import PencilIcon from "./pencilIcon.svg";
 import DateSeperator from "./date-seperator.svg";
@@ -32,6 +38,7 @@ import Wave from "./wave.svg";
 import ShellImage from "./shellImage.svg";
 import SurveyIcon from "./surveyIcon.svg";
 import Location from "./location.svg";
+import EmptyStar from "./emptyStar.svg";
 import Tooltip from "./tooltip.svg";
 import MdaLogo from "./mda-side-logo.svg";
 import FilterIcon from "./filterIcon.svg";
@@ -53,6 +60,7 @@ import FolderIcon from "./folderIcon.svg";
 import SettingsIcon from "./settingsIcon.svg";
 import CategoryIcon from "./categoryIcon.svg";
 import BadgeIcon from "./badgeIcon.svg";
+import FileUpload from "./fileUpload.svg";
 import EyemarkedIcon from "./eyemarkedIcon.svg";
 import ProfileIcon from "./profileIcon.svg";
 import NotificationIcon from "./notificationIcon.svg";
@@ -60,7 +68,9 @@ import PushNotificationIcon from "./pushNotificationIcon.svg";
 import EmailNotificationIcon from "./emailNotificationIcon.svg";
 import ProjectsIcon from "./projects.svg";
 import SearchIcon from "./searchIcon.svg";
+import OpenEnded from "./open-ended.svg";
 import UpVote from "./upvote.svg";
+import Thumbnail from "./thumbnail.svg";
 import DownVote from "./downvote.svg";
 import MoreIcon2 from "./more.svg";
 import SmallImg1 from "./smallImage1.svg";
@@ -83,6 +93,11 @@ import Sectors from "./sectors.svg";
 import SDGs from "./sdgs.svg";
 import Ministries from "./ministries.svg";
 import States from "./states.svg";
+import Likecart from "./likecart.svg";
+import MultiChoice from "./multiChoice.svg";
+import UploadFile from "./upload.svg";
+import DropDownIcon from "./dropdown-icon.svg";
+import Rating from "./rating.svg";
 import ArrowBack from "./arrow-back.svg";
 import Arrowback from "./arrowBack.svg";
 import Filter from "./filter.svg";
@@ -90,6 +105,7 @@ import ChevronRight from "./chevron-right.svg";
 import EditProfile from "./settings/edit-profile.svg";
 import ChangePassword from "./settings/change-password.svg";
 import Kyc from "./settings/kyc.svg";
+import TInfo from "./t-info.svg";
 import DeactivateAccount from "./settings/deactivate-account.svg";
 import Upload from "./settings/upload.svg";
 import SuccessCup from "./settings/success-cup.svg";
@@ -127,6 +143,7 @@ export {
   BorderRight,
   Budget2,
   None,
+  Likecart,
   Budget3,
   Budget4,
   StartDate,
@@ -134,8 +151,11 @@ export {
   Info,
   Pointer,
   MdaLogo,
+  Bookmark,
+  MultiChoice,
   MoreIconBlack,
   FHA,
+  Thumbnail,
   ArrowForward,
   SuccessCup,
   Upload,
@@ -143,8 +163,18 @@ export {
   EditProfile,
   ChangePassword,
   Kyc,
+  Emoji1,
+  Emoji2,
+  Emoji3,
+  Emoji4,
+  Emoji5,
+  OpenEnded,
+  EmptyStar,
   AddMore,
+  FileUpload,
   PencilIcon,
+  DropDownIcon,
+  Rating,
   DateSeperator,
   FilterIcon,
   SidebarLogoWhite,
@@ -181,6 +211,7 @@ export {
   Person,
   Ministry,
   SDG,
+  UploadFile,
   ProjectIcon,
   Verified,
   ShellImage,
@@ -192,6 +223,7 @@ export {
   DocIcon,
   LadyImg,
   HomeIcon,
+  TInfo,
   GraphIcon,
   FolderIcon,
   SettingsIcon,

@@ -1,25 +1,24 @@
 .card-record {
-  width: 32.4%;
+  @apply w-full sm:w-32.4 mt-3 sm:mt-0;
   height: 156px;
-  background: #FEFFFE;
+  background: #fefffe;
   border-radius: 8px;
 }
 
 .card-record-deet {
-  width: 36%;
+  @apply w-full sm:w-36 mt-3 sm:mt-0;
   height: 483px;
-  background: #FEFFFE;
+  background: #fefffe;
   border-radius: 8px;
 }
 .card-record-deet-2-cont {
-  width: 25%;
+  @apply w-full sm:w-1/4 mt-3 sm:mt-0;
   height: 483px;
 }
 
 .card-record-deet-2-top {
-  background: #FEFFFE;
+  background: #fefffe;
   border-radius: 8px;
-  width: 100%;
   height: 156px;
 }
 
@@ -32,7 +31,7 @@
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  color: #A0AFBF;
+  color: #a0afbf;
 }
 
 .quick-create {
@@ -43,8 +42,8 @@
   justify-content: center;
   height: 95px;
   text-align: center;
-  background: #FFFFFF;
-  border: 1px solid #EDF2F7;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
 }
 
 .create-text {
@@ -59,9 +58,8 @@
 }
 
 .card-record-deet-2 {
-  background: #FEFFFE;
+  background: #fefffe;
   border-radius: 8px;
-  width: 100%;
   height: 307px;
 }
 
@@ -85,8 +83,7 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: #E4AA24;
-
+  color: #e4aa24;
 }
 
 .see-all {
@@ -96,13 +93,12 @@
   font-size: 10px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #A0AFBF;
+  color: #a0afbf;
 }
 
 .big-card {
-  width: 100%;
   height: 483px;
-  background: #FEFFFE;
+  background: #fefffe;
   border-radius: 8px;
 }
 
@@ -115,8 +111,8 @@
 .date {
   width: 154px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  background: #ffffff;
+  border: 1px solid #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +120,7 @@
 
 .date-text {
   font-size: 14px;
-  color: #252117
+  color: #252117;
 }
 
 .cr-projects {
@@ -162,9 +158,8 @@
     font-weight: bold;
     font-size: 10px;
     line-height: 14px;
-    text-transform: uppercase;    
-    color: #A0AFBF;
-    
+    text-transform: uppercase;
+    color: #a0afbf;
   }
 }
 
@@ -193,7 +188,7 @@
   font-size: 10px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #A0AFBF;
+  color: #a0afbf;
 }
 
 .num-big-gray {
@@ -202,7 +197,7 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
-  color: #EDF2F7;
+  color: #edf2f7;
 }
 
 .text-ongoing {
@@ -212,8 +207,7 @@
   font-size: 10px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #226AF5;
-
+  color: #226af5;
 }
 
 .text-completed {
@@ -223,7 +217,7 @@
   font-size: 10px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #02903C;
+  color: #02903c;
 }
 
 .text-abandoned {
@@ -233,9 +227,9 @@
   font-size: 10px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #C8C8C8;
+  color: #c8c8c8;
 }
 
 .cr-divide {
-  background-color: #EDF2F7;
+  background-color: #edf2f7;
 }

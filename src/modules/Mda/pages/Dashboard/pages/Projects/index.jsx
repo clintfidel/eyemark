@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="content">
           <div className="nav-contents w-full">
             <div className="navigation2">
-              <div className="flex items-end justify-start">
+              <div className="flex sm:w-4/12">
                 <NavLink to={`${url}/${projectsRoutes.screen1}`} className="nav" activeClassName="nav-active">
                   <p>All</p>
                 </NavLink>

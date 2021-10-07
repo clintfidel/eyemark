@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/modules/CreateAccount/pages/Screen5/style.scss"],"names":[],"mappings":"AAAA,kBACE,WAAY,CACZ,YAAa,CACb,wBAAyB,CACzB,iBAAkB","file":"32.320c1b34.chunk.css","sourcesContent":[".upload-container {\n  width: 223px;\n  height: 223px;\n  background-color: #e2e8f0;\n  border-radius: 50%;\n}\n"]}

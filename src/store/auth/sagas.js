@@ -2,7 +2,7 @@ import { takeEvery, fork, call, put } from "redux-saga/effects";
 import { types } from "./types";
 import * as APIS from "./api";
 import history from "routes/history";
-import { createAccountRoutes } from "routes/routes-list";
+import { createAccountRoutes, modulesRoutes } from "routes/routes-list";
 
 function* register({ payload }) {
   yield put({ type: types.REGISTER_LOADING });
@@ -13,7 +13,9 @@ function* register({ payload }) {
     localStorage.setItem("access_token", access_token);
     localStorage.setItem("refresh_token", refresh_token);
     yield put({ type: types.GET_USER, payload: user });
-    history.push(`/onboarding/${createAccountRoutes.screen5}`);
+    console.log(createAccountRoutes);
+    // history.push(`/onboarding/${createAccountRoutes.screen5}`);
+    history.push(`/citizen/${modulesRoutes.screen1}/${createAccountRoutes.screen2}`);
   } catch (e) {
     alert(JSON.stringify(e));
     yield put({ type: types.REGISTER_DONE });

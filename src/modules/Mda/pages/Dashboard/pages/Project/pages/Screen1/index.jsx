@@ -65,8 +65,8 @@ export function Screen1({ history }) {
         <title>Eyemark - Project overview</title>
       </Helmet>
       <div className="nav-content">
-        <div className="flex items-start justify-between mb-7 ph">
-          <div style={{ width: "75%" }}>
+        <div className="flex-wrap sm:flex-nowrap justify-between ph">
+          <div className="w-full sm:w-9/12">
             <p className="housing-units">300,000 Affordable Housing Units</p>
             <div>
               <p className="label-1 mb-2">SUPERVISING MDA</p>
@@ -77,7 +77,7 @@ export function Screen1({ history }) {
               </div>
             </div>
           </div>
-          <div style={{ width: "25%" }}>
+          <div className="w-full sm:w-3/12 mt-5 sm:mt-0">
             <div className="project-card states">
               <div className="flex items-center mb-5">
                 <p className="state-txt mr-1">Anambra</p>
@@ -90,8 +90,8 @@ export function Screen1({ history }) {
             </div>
           </div>
         </div>
-        <div className="flex items-start justify-between mb-7 ph">
-          <div style={{ width: "49.5%" }}>
+        <div className="flex flex-wrap sm:flex-nowrap sm:space-x-3 items-start justify-between mb-7 ph">
+          <div className="w-full sm:w-6/12">
             <div className="project-card ongoing mb-2 flex items-center justify-between">
               <div style={{ width: "50%", height: "100%" }} className="flex flex-col justify-between">
                 <div>
@@ -127,7 +127,7 @@ export function Screen1({ history }) {
               </div>
             </div>
           </div>
-          <div style={{ width: "49.5%" }}>
+          <div className="w-full sm:w-6/12">
             <div className="flex items-start justify-between mb-2">
               <div style={{ width: "49%" }}>
                 <div className="project-card others">
@@ -179,7 +179,7 @@ export function Screen1({ history }) {
           </div>
         </div>
         <p className="content-title mb-5 ph">Ministry(s)</p>
-        <div className="flex items-center mb-12 ministrys">
+        <div className="ministrys">
           <div className="project-card ministry flex items-center justify-center flex-shrink-0">
             <p>Ministry of Housing</p>
           </div>
@@ -202,7 +202,7 @@ export function Screen1({ history }) {
         </div>
         <p className="content-title mb-5 ph">SDGs</p>
         <p className="content-subtitle mb-5 ph">Suspendisse molestie volutpat non dis cursus.</p>
-        <div className="flex items-center mb-12 flex-wrap ph">
+        <div className="items-center flex-wrap mb-12 ph">
           <div className="flex one-sdg items-center mr-3 mb-3">
             <img src={SDGSPoverty} alt="No Poverty" />
             <p>No Poverty</p>

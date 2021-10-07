@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { createProjectRoutes, dashboardRoutes } from "routes/routes-list";
 import "../../style.scss";
 import "./style.scss";
 import { AddMore, RemoveIcon, Pointer } from "assets/icons(svg)";
@@ -50,9 +52,11 @@ const Screen2 = () => {
         </div>
       </div>
       <div className="mt-8">
-        <img className="rmIcon mt-2" src={RemoveIcon} />
+        <div className="rmIcon">
+          <img className="mt-2" src={RemoveIcon} />
+        </div>
         <div className="form-control-l">
-          <div className="flex justify-between">
+          <div className="flex flex-wrap sm:flex-nowrap justify-between sm:space-x-4 lg:space-x-6">
             <Input image={Pointer} className="input-invite-l" placeholder="Long.Lat" />
             <SelectField labelPadding="30px" inputcode="GPZ" label="State" className="select-container" />
             <SelectField label="Local Government Area" className="select-container" />
@@ -61,7 +65,7 @@ const Screen2 = () => {
       </div>
       {inputList.map((x, i) => {
         <div className="form-control-l">
-          <div className="flex justify-between mt-8">
+          <div className="flex flex-wrap justify-between mt-8">
             <Input className="input-invite-l" placeholder="Long.Lat" />
             <SelectField labelPadding="15px" inputcode="GPZ" label="State" className="select-container" />
             <SelectField label="Local Government Area" className="select-container" />
@@ -81,12 +85,18 @@ const Screen2 = () => {
       <div className="mt-56">
         <hr className="" />
         <div className="flex justify-between my-3">
-          <div className="previous-project">
+          <NavLink
+            className="previous-project"
+            to={`/mda/dashboard/${dashboardRoutes.createproject}/${createProjectRoutes.screen1}`}
+          >
             <p className="previous-text">Back</p>
-          </div>
-          <div className="next-project py-4">
+          </NavLink>
+          <NavLink
+            className="next-project py-4"
+            to={`/mda/dashboard/${dashboardRoutes.createproject}/${createProjectRoutes.screen3}`}
+          >
             <p className="next-text ">Next</p>
-          </div>
+          </NavLink>
         </div>
         <hr className="mt-3" />
       </div>

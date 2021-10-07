@@ -1,23 +1,20 @@
 .settings-notifications {
-    width: 100%;
-    background-color: #ebebeb;
-    min-height: 100vh;
-    .navigation {
-      width: 100%;
-      height: 64px;
-      background-color: #fff;
-      padding: 0 79px;
-      margin-bottom: 52px;
-      .title {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 22px;
-        color: #252117;
-      }
-    }
-    .content {
-      padding: 0 79px;
+  background-color: #ebebeb;
+  min-height: 100vh;
+  .navigation {
+    height: 64px;
+    background-color: #fff;
+    padding: 0 79px;
+    margin-bottom: 52px;
+    .title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #252117;
     }
   }
-  
+  .content {
+    padding: 0 79px;
+  }
+}

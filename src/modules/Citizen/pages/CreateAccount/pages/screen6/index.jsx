@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LogoSmall } from "assets/icons(svg)";
 import { Tooltip, Location, Ministry, SDG } from "assets/icons(svg)";
 import { Background2 } from "assets/images(png)";
@@ -8,10 +8,55 @@ import { states, ministry, sdg } from "utils";
 import { useTranslation } from "react-i18next";
 import { createAccountRoutes, modulesRoutes } from "routes/routes-list";
 import "./style.scss";
+import { getInterests, updateInterests } from "network/api";
 
 export function Screen6({ history }) {
   const { t } = useTranslation();
   const [tagClicked, setTagClicked] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const [locationItems, setLocationItems] = useState([]);
+  const [ministryItems, setMinistryItems] = useState([]);
+  const [SDGItems, setSDGItems] = useState([]);
+  const [sectorItems, setSectorItems] = useState([]);
+
+  const [locationData, setLocationData] = useState([]);
+  const [ministryData, setMinistryData] = useState([]);
+  const [SDGData, setSDGData] = useState([]);
+  const [sectorData, setSectorData] = useState([]);
+
+  const handleInterests = async () => {
+    setLoading(true);
+    try {
+      let response = await updateInterests({
+        locations: locationItems,
+        ministries: ministryItems,
+        sdgs: SDGItems,
+        sectors: sectorItems
+      });
+      if (response.data) history.push(`/citizen/${modulesRoutes.screen1}/${createAccountRoutes.screen7}`);
+    } catch (error) {
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const updateData = async () => {
+    try {
+      const response = await getInterests();
+      let res = response.data;
+
+      setLocationData(res.locations.map(item => ({ name: item })));
+      setMinistryData(res.ministries.map(item => ({ name: item })));
+      setSDGData(res.sdgs.map(item => ({ name: item })));
+      setSectorData(res.sectors.map(item => ({ name: item })));
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    updateData();
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -39,33 +84,55 @@ export function Screen6({ history }) {
             Lorem ipsum dolor sit amet, nonummy nibh euismod tincidunt ut laoreet dolore magna{" "}
           </p>
           <div className="h-80 w-full tags-container">
-            <Tags
-              spacing="mb-12"
-              img1={Location}
-              data={states}
-              img2={Tooltip}
-              title="Location"
-              className="parent-tags"
-              isTouched={value => setTagClicked(value)}
-            />
-            <Tags
-              spacing="mb-12"
-              img1={Ministry}
-              data={ministry}
-              img2={Tooltip}
-              title="Ministry"
-              className="parent-tags"
-              isTouched={value => setTagClicked(value)}
-            />
-            <Tags
-              spacing="mb-12"
-              img1={SDG}
-              data={sdg}
-              img2={Tooltip}
-              title="SDG"
-              className="parent-tags"
-              isTouched={value => setTagClicked(value)}
-            />
+            {locationData.length === 0 ? (
+              <div>
+                <p> Loading, please wait...</p>
+              </div>
+            ) : (
+              <>
+                <Tags
+                  spacing="mb-2"
+                  img1={Location}
+                  data={locationData}
+                  img2={Tooltip}
+                  title="Location"
+                  className="parent-tags"
+                  isTouched={value => setTagClicked(value)}
+                  setSelectedItems={setLocationItems}
+                />
+
+                <Tags
+                  spacing="mb-2"
+                  img1={Ministry}
+                  data={ministryData}
+                  img2={Tooltip}
+                  title="Ministry"
+                  className="parent-tags"
+                  isTouched={value => setTagClicked(value)}
+                  setSelectedItems={setMinistryItems}
+                />
+                <Tags
+                  spacing="mb-2"
+                  img1={SDG}
+                  data={SDGData}
+                  img2={Tooltip}
+                  title="SDG"
+                  className="parent-tags"
+                  isTouched={value => setTagClicked(value)}
+                  setSelectedItems={setSDGItems}
+                />
+                <Tags
+                  spacing="mb-2"
+                  img1={SDG}
+                  data={sectorData}
+                  img2={Tooltip}
+                  title="Sector"
+                  className="parent-tags"
+                  isTouched={value => setTagClicked(value)}
+                  setSelectedItems={setSectorItems}
+                />
+              </>
+            )}
           </div>
           <div className="absolute bottom-0 inset-x-0 footer w-full h-20 px-6 flex items-center justify-between">
             <Button
@@ -74,11 +141,7 @@ export function Screen6({ history }) {
               className="btn-size-sm btn-no-bg"
             />
             {tagClicked ? (
-              <Button
-                onClick={() => history.push(`/citizen/${modulesRoutes.screen1}/${createAccountRoutes.screen7}`)}
-                text={t("auth:Next")}
-                className="btn-size-sm"
-              />
+              <Button loading={loading} onClick={handleInterests} text={t("auth:Next")} className="btn-size-sm" />
             ) : null}
           </div>
         </div>

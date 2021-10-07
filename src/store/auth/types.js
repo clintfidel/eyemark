@@ -1,6 +1,17 @@
-export const types = {
+export const REGISTER_TYPES = {
   REGISTER_LOADING: "REGISTER_LOADING",
   REGISTER: "REGISTER",
-  REGISTER_DONE: "REGISTER_DONE",
+  REGISTER_DONE: "REGISTER_DONE"
+};
+
+export const LOGIN_TYPES = {
+  LOGIN_LOADING: "LOGIN_LOADING",
+  LOGIN: "LOGIN",
+  LOGIN_DONE: "LOGIN_DONE"
+};
+
+export const types = {
+  ...REGISTER_TYPES,
+  ...LOGIN_TYPES,
   GET_USER: "GET_USER"
 };

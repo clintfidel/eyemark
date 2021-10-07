@@ -1,13 +1,80 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Background, Logo, GooglePlay, AppStore } from "assets/images(png)";
 import { Input, Button } from "components";
 import "./style.scss";
 import { Google, Facebook, Twitter, LogoBlack } from "assets/icons(svg)";
 import { useTranslation } from "react-i18next";
+import { connect } from "react-redux";
+import * as yup from "yup";
+import { login } from "store/auth/actions";
+import history from "routes/history";
+import { AuthContext } from "context/AuthContext";
 
+const schema = yup.object().shape({
+  email: yup.string().email("Invalid email").required("Email is required"),
+  password: yup.string().required("Password is required")
+});
 export function Screen1({ history }) {
+  const {
+    state: { loading, error, is_authenticated },
+    login
+  } = useContext(AuthContext);
+
+  useEffect(() => {
+    try {
+      if (error) {
+        const temp = error.data ? error.data : error;
+        delete temp["status_code"];
+        const message = Object.keys(temp).map(key => temp[key][0]);
+
+        console.log(error);
+        alert(message.join(" "));
+      }
+    } catch (err) {}
+  }, [error]);
+
+  // useEffect(() => {
+  //   if (is_authenticated) setTimeout(() => history.push("/citizen/dashboard"), 3000);
+  // }, [is_authenticated]);
+
   const { t } = useTranslation();
+  const [payload, setPayload] = useState({ email: "", password: "" });
+  const [errors, setErrors] = useState(null);
+  const onGetInputValue = event => {
+    const value = event.target.value;
+    const name = event.target.name;
+    setPayload({ ...payload, [name]: value });
+  };
+
+  const onLogin = () => {
+    setErrors(null);
+    schema
+      .validate(payload, { abortEarly: false })
+      .then(() => {
+        login(payload);
+      })
+      .catch(err => {
+        let error = {};
+        err.inner.forEach(e => {
+          error = { ...error, [e.path]: true };
+        });
+        setErrors(error);
+      });
+  };
+
+  useEffect(() => {
+    gapi.signin2.render("g-signin2", {
+      scope: "profile email",
+      width: 300,
+      height: 50,
+      longTitle: true,
+      theme: "dark",
+      onsuccess: () => {},
+      onfailure: () => {}
+    });
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -41,24 +108,42 @@ export function Screen1({ history }) {
               </div>
             </div>
           </div>
-          <div className="w-full login-box w-595 px-10 py-11">
+          <div className="w-full login-box w-595 px-10 py-11 my-8">
             <p className="text-base font-semibold mb-2.5">{t("auth:Login to Eyemark")}</p>
             <p className="text-sm font-medium pr-2 mb-10" style={{ color: "#4B5667" }}>
               Lorem ipsum dolor sit amet, nonummy nibh euismod tincidunt ut laoreet dolore magna{" "}
             </p>
-            <Input placeholder="Phone, email, username" />
-            <Input placeholder={t("auth:Password")} type="password" />
-            <Button text={t("auth:Login")} />
+            <Input
+              name="email"
+              type="email"
+              label={t("auth:Email")}
+              placeholder="Phone, email, username"
+              onChange={onGetInputValue}
+              error={errors && errors.email}
+              helperText={errors && errors.email ? "Email is required" : null}
+            />
+            <Input
+              placeholder={t("auth:Password")}
+              name="password"
+              type="password"
+              onChange={onGetInputValue}
+              error={errors && errors.password}
+              helperText={errors && errors.password ? "Password is required" : null}
+            />
+            <Button onClick={onLogin} loading={loading} text={t("auth:Login")} />
             <div className="mb-10" />
             <p className="text-sm text-center" style={{ color: "#718195" }}>
               {t("or")}
             </p>
             <div className="mb-7" />
-            <div className="w-full flex items-center justify-center mb-9">
+            {/* <div className="w-full flex items-center justify-center mb-9">
               <img src={Facebook} className="mr-5 cursor-pointer" alt="facebook" />
               <img src={Google} className="mr-5 cursor-pointer" alt="google" />
               <img src={Twitter} className="cursor-pointer" alt="twitter" />
-            </div>
+            </div> */}
+
+            <div id="g-signin2" className="mb-7 mx-auto" />
+
             <p className="text-sm text-center cursor-pointer">{t("auth:Forgot Password")}?</p>
           </div>
         </div>
@@ -101,4 +186,10 @@ export function Screen1({ history }) {
   );
 }
 
-export default Screen1;
+function mapStateToProps(state) {
+  return {
+    loading: state.auth.loading
+  };
+}
+
+export default connect(mapStateToProps, { login })(Screen1);

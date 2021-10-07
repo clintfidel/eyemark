@@ -9,7 +9,11 @@ import Mda from "modules/Mda";
 import { withTranslation } from "react-i18next";
 import "i18n";
 import PrivateRoute from "routes/privateroute";
-import Questions from "modules/Mda/pages/Dashboard/pages/Analytics/pages/Screen5";
+import AuthRoute from "routes/authroute";
+import { AuthProvider } from "context/AuthContext";
+import UseLogout from "helpers/useLogout";
+import SurveyMda from "modules/Mda/pages/Dashboard/pages/Analytics/pages/Screen5";
+import SurveyCitizen from "modules/Citizen/pages/Dashboard/pages/Project/pages/Screen7";
 
 class App extends Component {
   state = {
@@ -35,16 +39,21 @@ class App extends Component {
     }
     return (
       <Suspense fallback={<Loading />}>
-        <Router history={history}>
-          <Switch>
-            <Route path="/login" component={Login} />
-            <Route path="/survey-questions" component={Questions} />
-            <PrivateRoute path="/mda" component={Mda} />
-            <PrivateRoute path="/citizen" component={Citizen} />
-            <PrivateRoute path="/contractors" component={Contractors} />
-            <Redirect to="/login" />
-          </Switch>
-        </Router>
+        <AuthProvider>
+          <UseLogout>
+            <Router history={history}>
+              <Switch>
+                <Route path="/login" component={Login} />
+                <Route path="/mda/dashboard/analytics/survey-questions" component={SurveyMda} />
+                <Route path="/citizen/dashboard/survey-questions" component={SurveyCitizen} />
+                <Route path="/mda" component={Mda} />
+                <Route path="/citizen" component={Citizen} />
+                <Route path="/contractors" component={Contractors} />
+                <Redirect to="/login" />
+              </Switch>
+            </Router>
+          </UseLogout>
+        </AuthProvider>
       </Suspense>
     );
   }

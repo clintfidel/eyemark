@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { LogoSmall } from "assets/icons(svg)";
 import { Background2 } from "assets/images(png)";
 import { Helmet } from "react-helmet";
@@ -6,10 +6,24 @@ import { useTranslation } from "react-i18next";
 import { Button, Textarea } from "components";
 import { createAccountRoutes, modulesRoutes } from "routes/routes-list";
 import "./style.scss";
+import { AuthContext } from "context/AuthContext";
 
 export function Screen5({ history }) {
+  const {
+    state: { loading, error },
+    update
+  } = useContext(AuthContext);
   const { t } = useTranslation();
   const [bio, setBio] = useState("");
+
+  const handleSubmit = () => {
+    try {
+      update({ bio }, () => history.push(`/citizen/${modulesRoutes.screen1}/${createAccountRoutes.screen6}`));
+    } catch (error) {}
+  };
+
+  useEffect(() => {}, []);
+
   return (
     <>
       <Helmet>
@@ -44,11 +58,7 @@ export function Screen5({ history }) {
               onClick={() => history.push(`/citizen/${modulesRoutes.screen1}/${createAccountRoutes.screen4}`)}
             />
             {bio.length > 0 ? (
-              <Button
-                onClick={() => history.push(`/citizen/${modulesRoutes.screen1}/${createAccountRoutes.screen6}`)}
-                text={t("auth:Next")}
-                className="btn-size-sm"
-              />
+              <Button loading={loading} onClick={handleSubmit} text={t("auth:Next")} className="btn-size-sm" />
             ) : null}
           </div>
         </div>

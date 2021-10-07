@@ -1,29 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.scss";
-import { Person, Verified } from "assets/icons(svg)";
+import { getFollowSuggestions } from "network/api";
+import UserTab from "./UserTab";
+import ProjectTab from "./ProjectTab";
 
 const Tabs = ({ isTouched }) => {
   const [openTab, setOpenTab] = useState(1);
-  const [clickBtn, setClickBtn] = useState(false);
-  const [clickBtn2, setClickBtn2] = useState(false);
-  const toggleBtn = () => {
-    if (clickBtn) {
-      setClickBtn(false);
-      isTouched(false);
-    } else {
-      setClickBtn(true);
-      isTouched(true);
-    }
+  const [suggestions, setSuggestions] = useState({ users: [], projects: [] });
+
+  const fetchSuggestions = async () => {
+    try {
+      const response = await getFollowSuggestions();
+      setSuggestions(response);
+    } catch (error) {}
   };
-  const toggleBtn2 = () => {
-    if (clickBtn2) {
-      setClickBtn2(false);
-      isTouched(false);
-    } else {
-      setClickBtn2(true);
-      isTouched(true);
-    }
-  };
+
+  useEffect(() => {
+    fetchSuggestions();
+  }, []);
   return (
     <>
       <div className="flex flex-wrap">
@@ -66,50 +60,14 @@ const Tabs = ({ isTouched }) => {
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <div className="flex mb-6 justify-between">
-                    <div className="flex">
-                      <img className="mr-5" src={Person} />
-                      <div className="">
-                        <p className="first-text font-bolder">Lekki-Ikoyi Link Bridge</p>
-                        <div className="flex mt-2 sub-text-1">
-                          Lekki-ikoyi, lagos
-                          <span className="text-status text-center mx-2">
-                            <p className="text-status-text">STATUS</p>
-                          </span>
-                          <span className="text-status-2">ongoing</span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      onClick={toggleBtn}
-                      className={`follow-button border-dashed ${clickBtn ? "follow-button-click" : "follow-button"}`}
-                    >
-                      {clickBtn ? "Unmark" : "Eyemark"}
-                    </button>
-                  </div>
+                  {suggestions.projects.map(suggestion => (
+                    <ProjectTab suggestion={suggestion} key={suggestion.id} isTouched={isTouched} />
+                  ))}
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <div className="flex mb-6 justify-between">
-                    <div className="flex">
-                      <img className="mr-5" src={Person} />
-                      <div className="">
-                        <div className="flex">
-                          <p className="first-text font-bolder">Aisha Yesufu</p>
-                          <img className="ml-4" src={Verified} />
-                        </div>
-                        <p className="flex mt-2 sub-text-1">
-                          12,533 Followers
-                          <span className="text-status-1 ml-3">16 Following</span>
-                        </p>
-                      </div>
-                    </div>
-                    <button
-                      onClick={toggleBtn2}
-                      className={`follow-button border-dashed ${clickBtn2 ? "follow-button-click" : "follow-button"}`}
-                    >
-                      {clickBtn2 ? "Unfollow" : "Follow"}
-                    </button>
-                  </div>
+                  {suggestions.users.map(suggestion => (
+                    <UserTab suggestion={suggestion} key={suggestion.public_id} isTouched={isTouched} />
+                  ))}
                 </div>
               </div>
             </div>

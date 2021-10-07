@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 .profile-posts {
-  width: 100%;
   padding: 0 30px;
   box-sizing: border-box;
 }
@@ -170,14 +169,12 @@
 
 .within {
   padding: 6px;
-  width: 100%;
 }
 
 .postTop2 {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 100%;
   padding-bottom: 10px;
 }
 
@@ -439,12 +436,11 @@
   line-height: 10px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #226AF5;
+  color: #226af5;
 }
 
 @media screen and (max-width: 788px) {
-  .profile-container 
-  .berger {
+  .profile-container .berger {
     font-size: 11px !important;
   }
   .strong {
@@ -452,7 +448,7 @@
   }
   .sgs {
     margin-left: 47px !important;
-    padding-right: 14px !important
+    padding-right: 14px !important;
   }
   .button {
     margin-top: 0 !important;

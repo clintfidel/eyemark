@@ -1,4 +1,4 @@
-.select-container {
+.select-container-1 {
   width: 48%;
   height: 54px;
   position: relative;
@@ -12,3 +12,91 @@
   }
 }
 
+.input-tag {
+  height: 35px;
+}
+
+.input-tag input {
+  border: none;
+  height: 35px;
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 154.6%;
+  color: #a0afbf;
+  outline: none;
+}
+
+.input-tag__tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 15px;
+  outline: none;
+}
+
+.input-tag__tags li {
+  align-items: center;
+  background: #252117;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  font-weight: 300;
+  list-style: none;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  padding: 5px 10px;
+}
+
+.input-tag__tags li button {
+  align-items: center;
+  appearance: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 30px;
+  height: 25px;
+  justify-content: center;
+  line-height: 0;
+  margin-left: 8px;
+  padding: 0;
+  transform: rotate(45deg);
+  width: 25px;
+}
+
+.input-tag__tags li.input-tag__tags__input {
+  background: none;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.p-date-input {
+  width: 48%;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: 1px solid #a0afbf;
+  height: 54px;
+  margin-bottom: 5%;
+}
+
+.accordion-text {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #252117;
+}
+
+.acc-subpoint {
+  font-family: Filson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #252117;
+}

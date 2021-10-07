@@ -38,12 +38,12 @@ const Overview = () => {
   };
   return (
     <div className="overview">
-      <div className="flex justify-between mb-5">
+      <div className="flex flex-col sm:flex-row justify-between mb-5 mt-4">
         <div className="flex">
           <img src={Wave} className="" />
           <p className="pl-3 pt-2 mda-welcome">Welcome</p>
         </div>
-        <div className="flex">
+        <div className="flex mt-2 sm:mt-0">
           <div className="date">
             <img className="mr-3" src={FilterIcon} />
             <p className="date-text">28 June 2021</p>
@@ -55,7 +55,7 @@ const Overview = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between mb-4">
+      <div className="flex flex-wrap justify-between mb-4">
         <div className="card-record p-4">
           <div className="flex justify-between">
             <div className="flex text-image">
@@ -112,7 +112,7 @@ const Overview = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between mb-4">
+      <div className="flex flex-wrap justify-between mb-4">
         <div className="card-record-deet p-4">
           <div className="flex justify-between">
             <div className="flex text-image">

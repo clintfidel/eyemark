@@ -4,7 +4,10 @@ import Tabs from "./components/Tabs.js";
 import SurveyDescription from "./components/SurveyDescription";
 import { SIZES } from "./constants";
 import QuestionCard from "./components/QuestionCard";
+import PlainQuestion from "./components/PlainQuestion";
+import FileUpload from "./components/FileUpload";
 import Header from "./components/Header";
+import "./components/style.scss";
 
 function Questions() {
   return (
@@ -14,7 +17,17 @@ function Questions() {
       <div style={styles.container}>
         <div style={styles.FormContainer}>
           <SurveyDescription />
-          <QuestionCard />
+          <QuestionCard fieldType="Multiple choice" />
+          <QuestionCard fieldType="Multiple choice" />
+          <PlainQuestion />
+          <QuestionCard fieldType="Multiple choice" />
+          <PlainQuestion />
+          <QuestionCard fieldType="Rating scale" />
+          <QuestionCard fieldType="Dropdown" />
+          <QuestionCard fieldType="Rating scale" />
+          <PlainQuestion />
+          <QuestionCard fieldType="Open-ended" />
+          <FileUpload />
         </div>
       </div>
     </>

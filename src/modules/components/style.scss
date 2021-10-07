@@ -7,6 +7,19 @@
   color: #252117;
 }
 
+.select-container-point {
+  height: 54px;
+  position: relative;
+  border: 1px solid #a0afbf;
+  padding: 8px 17px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  input {
+    padding: none !important;
+  }
+}
+
 .comment-modal {
   .input-container {
     width: 48%;
@@ -17,31 +30,31 @@
     box-sizing: border-box;
     border-radius: 4px;
     background-color: #fff;
-      .MuiInputBase-input {
-        font: inherit;
-        color: currentColor;
-        width: 100%;
-        border: 0;
-        height: 1.1876em;
-        margin: 0;
-        display: block;
-        padding: 10px 0 7px;
-        min-width: 0;
-        background: none;
-        box-sizing: content-box;
-        animation-name: mui-auto-fill-cancel;
-        letter-spacing: inherit;
-        animation-duration: 10ms;
-        -webkit-tap-highlight-color: transparent;
+    .MuiInputBase-input {
+      font: inherit;
+      color: currentColor;
+
+      border: 0;
+      height: 1.1876em;
+      margin: 0;
+      display: block;
+      padding: 10px 0 7px;
+      min-width: 0;
+      background: none;
+      box-sizing: content-box;
+      animation-name: mui-auto-fill-cancel;
+      letter-spacing: inherit;
+      animation-duration: 10ms;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 }
 .comment-modal {
   .input-container::placeholder {
-    color: #252117 !important
+    color: #252117 !important;
   }
   .invite-btn {
-    background: #E4AA24;
+    background: #e4aa24;
     color: #fff;
     width: 27%;
     height: 55%;
@@ -118,7 +131,6 @@
       width: 48%;
       height: 565px;
       img {
-        width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
@@ -147,6 +159,20 @@
   .card-invite {
     width: 40%;
     height: 364px;
+    box-shadow: -5px -5px 25px rgba(113, 129, 149, 0.2), 5px 5px 20px rgba(61, 132, 172, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 26px 30px;
+    box-sizing: border-box;
+    .footer {
+      background-color: #252117;
+    }
+  }
+  .card-invite-p {
+    width: 35%;
+    height: 687px;
     box-shadow: -5px -5px 25px rgba(113, 129, 149, 0.2), 5px 5px 20px rgba(61, 132, 172, 0.1);
     border-radius: 8px;
     background-color: #fff;
@@ -210,7 +236,6 @@
 }
 
 .new-post {
-  width: 100%;
   min-height: 150px;
   background: #ffffff;
   border-radius: 8px;
@@ -295,7 +320,6 @@
     margin-bottom: 30px;
   }
   .post-image {
-    width: 100%;
     height: 256px;
     object-fit: cover;
     object-position: center;
@@ -414,7 +438,6 @@
 
 @media screen and (max-width: 1024px) {
   .post-modal .card .left {
-    width: 100% !important;
     height: 565px;
   }
   .post-modal .card {

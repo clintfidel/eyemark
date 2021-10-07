@@ -4,16 +4,18 @@ import { Loading } from "components";
 import { loginRoutes } from "routes/routes-list";
 const Screen1 = React.lazy(() => import("./pages/Screen1"));
 import "./style.scss";
+import LoginLayer from "./layer";
+import AuthRoute from "routes/authroute";
 
 const Login = () => {
   let { path } = useRouteMatch();
   return (
     <Suspense fallback={<Loading />}>
-      <div>
+      <LoginLayer>
         <Switch>
-          <Route exact path={`${path}/${loginRoutes.screen1}`} render={props => <Screen1 {...props} />} />
+          <AuthRoute exact path={`${path}/${loginRoutes.screen1}`} component={Screen1} />
         </Switch>
-      </div>
+      </LoginLayer>
     </Suspense>
   );
 };

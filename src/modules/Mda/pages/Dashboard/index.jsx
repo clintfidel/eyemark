@@ -61,22 +61,22 @@ const Sidebar = ({ show }) => {
           <img src={HomeIcon} />
           <p>Overview</p>
         </NavLink>
-        <NavLink to={`${url}/${dashboardRoutes.contractors}`} className="nav-mda" activeClassName="nav-active-mda">
+        {/* <NavLink to={`${url}/${dashboardRoutes.contractors}`} className="nav-mda" activeClassName="nav-active-mda">
           <img src={FolderIcon} />
           <p>Contractors</p>
-        </NavLink>
+        </NavLink> */}
         <NavLink to={`${url}/${dashboardRoutes.projects}`} className="nav-mda" activeClassName="nav-active-mda">
           <img src={FolderIcon} />
           <p>Projects</p>
         </NavLink>
-        <NavLink to={`${url}/${dashboardRoutes.categories}`} className="nav-mda" activeClassName="nav-active-mda">
+        {/* <NavLink to={`${url}/${dashboardRoutes.categories}`} className="nav-mda" activeClassName="nav-active-mda">
           <img src={CategoryIcon} />
           <p>Categories</p>
-        </NavLink>
-        <NavLink to={`${url}/${dashboardRoutes.notifications}`} className="nav-mda" activeClassName="nav-active-mda">
+        </NavLink> */}
+        {/* <NavLink to={`${url}/${dashboardRoutes.notifications}`} className="nav-mda" activeClassName="nav-active-mda">
           <img src={NotificationIcon} />
           <p>Notifications</p>
-        </NavLink>
+        </NavLink> */}
         <NavLink to={`${url}/${dashboardRoutes.analytics}`} className="nav-mda" activeClassName="nav-active-mda">
           <img src={EyemarkedIcon} />
           <p>Analytics</p>
